@@ -310,7 +310,7 @@ void segmentation::cloud_cb (const sensor_msgs::PointCloud2ConstPtr& cloud_msg)
     marker_pub.publish(rightLinks);
     
     marker_pub.publish(leftLinks);
-    ros::Duration(10).sleep();
+    ros::Duration(1).sleep();
 }
 
 
