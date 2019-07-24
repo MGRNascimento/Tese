@@ -1,0 +1,43 @@
+
+(cl:in-package :asdf)
+
+(defsystem "vizzy_msgs-msg"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils :actionlib_msgs-msg
+               :geometry_msgs-msg
+               :sensor_msgs-msg
+               :std_msgs-msg
+)
+  :components ((:file "_package")
+    (:file "CartesianAction" :depends-on ("_package_CartesianAction"))
+    (:file "_package_CartesianAction" :depends-on ("_package"))
+    (:file "CartesianActionFeedback" :depends-on ("_package_CartesianActionFeedback"))
+    (:file "_package_CartesianActionFeedback" :depends-on ("_package"))
+    (:file "CartesianActionGoal" :depends-on ("_package_CartesianActionGoal"))
+    (:file "_package_CartesianActionGoal" :depends-on ("_package"))
+    (:file "CartesianActionResult" :depends-on ("_package_CartesianActionResult"))
+    (:file "_package_CartesianActionResult" :depends-on ("_package"))
+    (:file "CartesianFeedback" :depends-on ("_package_CartesianFeedback"))
+    (:file "_package_CartesianFeedback" :depends-on ("_package"))
+    (:file "CartesianGoal" :depends-on ("_package_CartesianGoal"))
+    (:file "_package_CartesianGoal" :depends-on ("_package"))
+    (:file "CartesianResult" :depends-on ("_package_CartesianResult"))
+    (:file "_package_CartesianResult" :depends-on ("_package"))
+    (:file "GazeAction" :depends-on ("_package_GazeAction"))
+    (:file "_package_GazeAction" :depends-on ("_package"))
+    (:file "GazeActionFeedback" :depends-on ("_package_GazeActionFeedback"))
+    (:file "_package_GazeActionFeedback" :depends-on ("_package"))
+    (:file "GazeActionGoal" :depends-on ("_package_GazeActionGoal"))
+    (:file "_package_GazeActionGoal" :depends-on ("_package"))
+    (:file "GazeActionResult" :depends-on ("_package_GazeActionResult"))
+    (:file "_package_GazeActionResult" :depends-on ("_package"))
+    (:file "GazeFeedback" :depends-on ("_package_GazeFeedback"))
+    (:file "_package_GazeFeedback" :depends-on ("_package"))
+    (:file "GazeGoal" :depends-on ("_package_GazeGoal"))
+    (:file "_package_GazeGoal" :depends-on ("_package"))
+    (:file "GazeResult" :depends-on ("_package_GazeResult"))
+    (:file "_package_GazeResult" :depends-on ("_package"))
+    (:file "TacVector" :depends-on ("_package_TacVector"))
+    (:file "_package_TacVector" :depends-on ("_package"))
+    (:file "Tactile" :depends-on ("_package_Tactile"))
+    (:file "_package_Tactile" :depends-on ("_package"))
+  ))

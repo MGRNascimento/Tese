@@ -1,0 +1,8 @@
+prefix=/home/miguel/catkin_ws/devel
+
+Name: vizzy_sensors
+Description: Description of vizzy_sensors
+Version: 1.0.0
+Cflags: -I/home/miguel/catkin_ws/src/vizzy/vizzy_sensors/include
+Libs: -L/home/miguel/catkin_ws/devel/lib -lvizzy_sensors_filters
+Requires: hokuyo_node laser_filters message_runtime nodelet pcl_ros sensor_msgs tf

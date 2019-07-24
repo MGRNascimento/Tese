@@ -1,0 +1,6 @@
+set(vizzy_slack_SETUP_PY_VERSION "0.0.0")
+set(vizzy_slack_SETUP_PY_SCRIPTS "")
+set(vizzy_slack_SETUP_PY_PACKAGES "vizzy_slack")
+set(vizzy_slack_SETUP_PY_PACKAGE_DIRS "scripts/vizzy_slack")
+set(vizzy_slack_SETUP_PY_MODULES "")
+set(vizzy_slack_SETUP_PY_MODULE_DIRS "")

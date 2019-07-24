@@ -1,0 +1,15 @@
+<launch>
+  <!--Include description and control launch files-->
+  <include file="$(find obj_recognition)/launch/robot_description.launch"/>
+  <include file="$(find obj_recognition)/launch/robot_control.launch"/>
+
+  <node name="camera_urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+  args="-urdf -param camera_description -x 0 -y 0 -z 0 -R 0 -P 0 -Y 0 -model obj_recognition"/>
+
+   <!-- cloud transformer-->
+  <node name="cloud_transformer" pkg="obj_recognition" type="obj_recognition_cloud_transformer" respawn="false"/>
+
+
+  <!-- feature extractor-->
+  <node name="feature_extractor" pkg="obj_recognition" type="obj_recognition_feature_extractor" respawn="false"/>
+</launch>

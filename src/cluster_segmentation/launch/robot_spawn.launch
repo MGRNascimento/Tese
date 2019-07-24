@@ -1,0 +1,80 @@
+<launch>
+  <!--Include description and control launch files-->
+  <include file="$(find obj_recognition)/launch/robot_description.launch"/>
+  <include file="$(find obj_recognition)/launch/robot_control.launch"/>
+
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+
+  <!-- These arguments load the electric grippers, for example left_electric_gripper:=true -->
+  <arg name="left_electric_gripper" default="true"/>
+  <arg name="right_electric_gripper" default="true"/>
+
+  <arg name="load_robot_description" default="true"/>
+  <param if="$(arg load_robot_description)" name="robot_description"
+      command="$(find xacro)/xacro --inorder $(find baxter_description)/urdf/baxter.urdf.xacro gazebo:=true
+      left_electric_gripper:=$(arg left_electric_gripper) right_electric_gripper:=$(arg right_electric_gripper)"/>
+
+  <!--Launch a gazebo world-->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find obj_recognition)/worlds/pr2_perception.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+<!-- Load the software version into the ROS Parameter Server -->
+  <param name="rethink/software_version" value="1.2.0" />
+
+  <!-- Publish a static transform between the world and the base of the robot -->
+  <node pkg="tf2_ros" type="static_transform_publisher" name="base_to_world" args="0 0 0 0 0 0 1 world base" />
+
+  <!--spawn a robot in gazebo world-->
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+  args="-urdf -param camera_description -x 0 -y -1 -z 0 -R 0 -P 0 -Y 3.14159265359 -model obj_recognition"/>
+
+<node name="baxter_urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+	args="-urdf -param robot_description -x 0 -y 1 -z 0.93 -Y -1.57079632679 -model baxter
+	      -J baxter::right_s0 -0.272659
+	      -J baxter::right_s1 1.04701
+	      -J baxter::right_e0 -0.00123203
+	      -J baxter::right_e1 0.49262
+	      -J baxter::right_w0 -0.0806423
+	      -J baxter::right_w1 -0.0620532
+	      -J baxter::right_w2 0.0265941
+	      -J baxter::left_s0 0.192483
+	      -J baxter::left_s1 1.047
+	      -J baxter::left_e0 0.000806359
+	      -J baxter::left_e1 0.491094
+	      -J baxter::left_w0 -0.178079
+	      -J baxter::left_w1 -0.0610333
+	      -J baxter::left_w2 -0.0124707" />
+
+ 
+
+  <!-- cloud transformer-->
+  <node name="cloud_transformer" pkg="obj_recognition" type="obj_recognition_cloud_transformer" respawn="false"/>
+
+
+  <!-- feature extractor-->
+  <node name="feature_extractor" pkg="obj_recognition" type="obj_recognition_feature_extractor" respawn="false"/>
+
+  
+
+  <!-- launch rviz-->
+  <node name="$(anon rviz)" pkg="rviz" type="rviz" respawn="false"
+    output="screen" args="-d $(find obj_recognition)/config/perception.rviz"/>
+
+  <!-- ros_control baxter launch file -->
+  <include file="$(find baxter_sim_hardware)/launch/baxter_sdk_control.launch">
+      <arg name="right_electric_gripper" value="$(arg right_electric_gripper)"/>
+      <arg name="left_electric_gripper" value="$(arg left_electric_gripper)"/>
+      <arg name="gui" value="$(arg gui)" />
+  </include>
+
+</launch>

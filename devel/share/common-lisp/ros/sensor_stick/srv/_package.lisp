@@ -1,0 +1,10 @@
+(cl:defpackage sensor_stick-srv
+  (:use )
+  (:export
+   "GETNORMALS"
+   "<GETNORMALS-REQUEST>"
+   "GETNORMALS-REQUEST"
+   "<GETNORMALS-RESPONSE>"
+   "GETNORMALS-RESPONSE"
+  ))
+

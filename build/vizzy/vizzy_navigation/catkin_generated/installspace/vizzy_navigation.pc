@@ -1,0 +1,8 @@
+prefix=/home/miguel/catkin_ws/install
+
+Name: vizzy_navigation
+Description: Description of vizzy_navigation
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/miguel/catkin_ws/install/lib 
+Requires: sensor_msgs geometry_msgs roscpp

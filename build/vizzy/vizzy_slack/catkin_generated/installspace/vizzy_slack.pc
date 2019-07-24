@@ -1,0 +1,8 @@
+prefix=/home/miguel/catkin_ws/install
+
+Name: vizzy_slack
+Description: Description of vizzy_slack
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/miguel/catkin_ws/install/lib 
+Requires: rospy std_msgs

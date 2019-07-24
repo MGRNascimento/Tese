@@ -1,0 +1,199 @@
+;; Auto-generated. Do not edit!
+
+
+(when (boundp 'vizzy_msgs::CartesianGoal)
+  (if (not (find-package "VIZZY_MSGS"))
+    (make-package "VIZZY_MSGS"))
+  (shadow 'CartesianGoal (find-package "VIZZY_MSGS")))
+(unless (find-package "VIZZY_MSGS::CARTESIANGOAL")
+  (make-package "VIZZY_MSGS::CARTESIANGOAL"))
+
+(in-package "ROS")
+;;//! \htmlinclude CartesianGoal.msg.html
+(if (not (find-package "GEOMETRY_MSGS"))
+  (ros::roseus-add-msgs "geometry_msgs"))
+(if (not (find-package "STD_MSGS"))
+  (ros::roseus-add-msgs "std_msgs"))
+
+
+(intern "*CARTESIAN*" (find-package "VIZZY_MSGS::CARTESIANGOAL"))
+(shadow '*CARTESIAN* (find-package "VIZZY_MSGS::CARTESIANGOAL"))
+(defconstant vizzy_msgs::CartesianGoal::*CARTESIAN* 0)
+(intern "*HOME*" (find-package "VIZZY_MSGS::CARTESIANGOAL"))
+(shadow '*HOME* (find-package "VIZZY_MSGS::CARTESIANGOAL"))
+(defconstant vizzy_msgs::CartesianGoal::*HOME* 1)
+(intern "*VELOCITY*" (find-package "VIZZY_MSGS::CARTESIANGOAL"))
+(shadow '*VELOCITY* (find-package "VIZZY_MSGS::CARTESIANGOAL"))
+(defconstant vizzy_msgs::CartesianGoal::*VELOCITY* 2)
+(intern "*GRAB*" (find-package "VIZZY_MSGS::CARTESIANGOAL"))
+(shadow '*GRAB* (find-package "VIZZY_MSGS::CARTESIANGOAL"))
+(defconstant vizzy_msgs::CartesianGoal::*GRAB* 3)
+(intern "*RELEASE*" (find-package "VIZZY_MSGS::CARTESIANGOAL"))
+(shadow '*RELEASE* (find-package "VIZZY_MSGS::CARTESIANGOAL"))
+(defconstant vizzy_msgs::CartesianGoal::*RELEASE* 4)
+(intern "*PREEMPT*" (find-package "VIZZY_MSGS::CARTESIANGOAL"))
+(shadow '*PREEMPT* (find-package "VIZZY_MSGS::CARTESIANGOAL"))
+(defconstant vizzy_msgs::CartesianGoal::*PREEMPT* 5)
+(defclass vizzy_msgs::CartesianGoal
+  :super ros::object
+  :slots (_type _end_effector_pose _velocity _duration ))
+
+(defmethod vizzy_msgs::CartesianGoal
+  (:init
+   (&key
+    ((:type __type) 0)
+    ((:end_effector_pose __end_effector_pose) (instance geometry_msgs::PoseStamped :init))
+    ((:velocity __velocity) (let (r) (dotimes (i 0) (push (instance std_msgs::Float32 :init) r)) r))
+    ((:duration __duration) (instance std_msgs::Float32 :init))
+    )
+   (send-super :init)
+   (setq _type (round __type))
+   (setq _end_effector_pose __end_effector_pose)
+   (setq _velocity __velocity)
+   (setq _duration __duration)
+   self)
+  (:type
+   (&optional __type)
+   (if __type (setq _type __type)) _type)
+  (:end_effector_pose
+   (&rest __end_effector_pose)
+   (if (keywordp (car __end_effector_pose))
+       (send* _end_effector_pose __end_effector_pose)
+     (progn
+       (if __end_effector_pose (setq _end_effector_pose (car __end_effector_pose)))
+       _end_effector_pose)))
+  (:velocity
+   (&rest __velocity)
+   (if (keywordp (car __velocity))
+       (send* _velocity __velocity)
+     (progn
+       (if __velocity (setq _velocity (car __velocity)))
+       _velocity)))
+  (:duration
+   (&rest __duration)
+   (if (keywordp (car __duration))
+       (send* _duration __duration)
+     (progn
+       (if __duration (setq _duration (car __duration)))
+       _duration)))
+  (:serialization-length
+   ()
+   (+
+    ;; uint8 _type
+    1
+    ;; geometry_msgs/PoseStamped _end_effector_pose
+    (send _end_effector_pose :serialization-length)
+    ;; std_msgs/Float32[] _velocity
+    (apply #'+ (send-all _velocity :serialization-length)) 4
+    ;; std_msgs/Float32 _duration
+    (send _duration :serialization-length)
+    ))
+  (:serialize
+   (&optional strm)
+   (let ((s (if strm strm
+              (make-string-output-stream (send self :serialization-length)))))
+     ;; uint8 _type
+       (write-byte _type s)
+     ;; geometry_msgs/PoseStamped _end_effector_pose
+       (send _end_effector_pose :serialize s)
+     ;; std_msgs/Float32[] _velocity
+     (write-long (length _velocity) s)
+     (dolist (elem _velocity)
+       (send elem :serialize s)
+       )
+     ;; std_msgs/Float32 _duration
+       (send _duration :serialize s)
+     ;;
+     (if (null strm) (get-output-stream-string s))))
+  (:deserialize
+   (buf &optional (ptr- 0))
+   ;; uint8 _type
+     (setq _type (sys::peek buf ptr- :char)) (incf ptr- 1)
+   ;; geometry_msgs/PoseStamped _end_effector_pose
+     (send _end_effector_pose :deserialize buf ptr-) (incf ptr- (send _end_effector_pose :serialization-length))
+   ;; std_msgs/Float32[] _velocity
+   (let (n)
+     (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4)
+     (setq _velocity (let (r) (dotimes (i n) (push (instance std_msgs::Float32 :init) r)) r))
+     (dolist (elem- _velocity)
+     (send elem- :deserialize buf ptr-) (incf ptr- (send elem- :serialization-length))
+     ))
+   ;; std_msgs/Float32 _duration
+     (send _duration :deserialize buf ptr-) (incf ptr- (send _duration :serialization-length))
+   ;;
+   self)
+  )
+
+(setf (get vizzy_msgs::CartesianGoal :md5sum-) "f363fa97393b5c8280ca1eb3765f4c8e")
+(setf (get vizzy_msgs::CartesianGoal :datatype-) "vizzy_msgs/CartesianGoal")
+(setf (get vizzy_msgs::CartesianGoal :definition-)
+      "# ====== DO NOT MODIFY! AUTOGENERATED FROM AN ACTION DEFINITION ======
+#goal definition
+uint8 CARTESIAN=0
+uint8 HOME=1
+uint8 VELOCITY=2
+uint8 GRAB=3
+uint8 RELEASE=4
+uint8 PREEMPT=5
+uint8 type
+
+geometry_msgs/PoseStamped end_effector_pose
+std_msgs/Float32[] velocity
+std_msgs/Float32 duration
+
+================================================================================
+MSG: geometry_msgs/PoseStamped
+# A Pose with reference coordinate frame and timestamp
+Header header
+Pose pose
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+# 0: no frame
+# 1: global frame
+string frame_id
+
+================================================================================
+MSG: geometry_msgs/Pose
+# A representation of pose in free space, composed of position and orientation. 
+Point position
+Quaternion orientation
+
+================================================================================
+MSG: geometry_msgs/Point
+# This contains the position of a point in free space
+float64 x
+float64 y
+float64 z
+
+================================================================================
+MSG: geometry_msgs/Quaternion
+# This represents an orientation in free space in quaternion form.
+
+float64 x
+float64 y
+float64 z
+float64 w
+
+================================================================================
+MSG: std_msgs/Float32
+float32 data
+")
+
+
+
+(provide :vizzy_msgs/CartesianGoal "f363fa97393b5c8280ca1eb3765f4c8e")
+
+

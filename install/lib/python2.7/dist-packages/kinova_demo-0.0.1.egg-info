@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: kinova_demo
+Version: 0.0.1
+Summary: The kinova_demo package
+Home-page: UNKNOWN
+Author: Kinova ROS Support
+Author-email: ros@kinovarobotics.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: std_msgs
+Requires: rospy
+Requires: kinova_msgs
+Requires: kinova_driver
+Requires: geometry_msgs

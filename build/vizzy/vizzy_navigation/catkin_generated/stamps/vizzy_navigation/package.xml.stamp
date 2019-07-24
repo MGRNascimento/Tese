@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package>
+  <name>vizzy_navigation</name>
+  <version>1.0.0</version>
+  <description>
+
+    Contains the launch files for running the ROS navigation
+    stack on Vizzy as well as launch files for packages like
+    amcl, gmapping and so on.
+
+  </description>
+
+  <maintainer email="miguelaragao91@gmail.com">Miguel Aragão</maintainer>
+  <author>Miguel Aragão</author>
+
+  <license>BSD</license>
+
+  <url type="website">https://github.com/vislab-tecnico-lisboa/vizzy/vizzy_navigation</url>
+  <url type="bugtracker">https://github.com/vislab-tecnico-lisboa/vizzy/issues</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>roslaunch</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>nav2d_operator</build_depend>
+  <build_depend>nav2d_operator_msgs</build_depend>
+  <run_depend>amcl</run_depend>
+  <run_depend>nav2d_operator</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>eband_local_planner</run_depend>
+  <run_depend>gmapping</run_depend>
+  <run_depend>map_server</run_depend>
+  <run_depend>move_base</run_depend>
+  <run_depend>navfn</run_depend>
+  <run_depend>rviz</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+</package>

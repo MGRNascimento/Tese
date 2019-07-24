@@ -1,0 +1,8 @@
+prefix=/home/miguel/catkin_ws/devel
+
+Name: vizzy_behaviour
+Description: Description of vizzy_behaviour
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/miguel/catkin_ws/devel/lib 
+Requires: 

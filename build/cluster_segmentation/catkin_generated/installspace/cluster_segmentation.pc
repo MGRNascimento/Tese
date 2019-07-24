@@ -1,0 +1,8 @@
+prefix=/home/miguel/catkin_ws/install
+
+Name: cluster_segmentation
+Description: Description of cluster_segmentation
+Version: 0.0.0
+Cflags: -I/home/miguel/catkin_ws/install/include
+Libs: -L/home/miguel/catkin_ws/install/lib 
+Requires: message_runtime

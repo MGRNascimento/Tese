@@ -1,0 +1,2 @@
+set(vizzy_msgs_MESSAGE_FILES "msg/GazeAction.msg;msg/GazeActionGoal.msg;msg/GazeActionResult.msg;msg/GazeActionFeedback.msg;msg/GazeGoal.msg;msg/GazeResult.msg;msg/GazeFeedback.msg;msg/CartesianAction.msg;msg/CartesianActionGoal.msg;msg/CartesianActionResult.msg;msg/CartesianActionFeedback.msg;msg/CartesianGoal.msg;msg/CartesianResult.msg;msg/CartesianFeedback.msg;msg/Tactile.msg;msg/TacVector.msg")
+set(vizzy_msgs_SERVICE_FILES "")

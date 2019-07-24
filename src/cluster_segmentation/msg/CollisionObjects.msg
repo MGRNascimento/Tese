@@ -1,0 +1,10 @@
+float32 posX
+float32 posY
+float32 posZ
+float32 oriX
+float32 oriY
+float32 oriZ
+float32 oriW
+float32 scaleX
+float32 scaleY
+float32 scaleZ

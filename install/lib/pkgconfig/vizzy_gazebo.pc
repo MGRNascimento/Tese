@@ -1,0 +1,8 @@
+prefix=/home/miguel/catkin_ws/install
+
+Name: vizzy_gazebo
+Description: Description of vizzy_gazebo
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/miguel/catkin_ws/install/lib 
+Requires: roscpp gazebo_ros

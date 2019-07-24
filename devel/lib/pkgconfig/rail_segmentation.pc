@@ -1,0 +1,8 @@
+prefix=/home/miguel/catkin_ws/devel
+
+Name: rail_segmentation
+Description: Description of rail_segmentation
+Version: 0.1.11
+Cflags: -I/home/miguel/catkin_ws/devel/include
+Libs: -L/home/miguel/catkin_ws/devel/lib 
+Requires: 

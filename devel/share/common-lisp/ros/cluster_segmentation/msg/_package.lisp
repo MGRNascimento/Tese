@@ -1,0 +1,11 @@
+(cl:defpackage cluster_segmentation-msg
+  (:use )
+  (:export
+   "<DETECTEDOBJECT>"
+   "DETECTEDOBJECT"
+   "<DETECTEDOBJECTSARRAY>"
+   "DETECTEDOBJECTSARRAY"
+   "<SEGMENTEDCLUSTERSARRAY>"
+   "SEGMENTEDCLUSTERSARRAY"
+  ))
+

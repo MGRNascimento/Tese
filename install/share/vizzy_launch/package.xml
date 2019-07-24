@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+  <name>vizzy_launch</name>
+  <version>1.0.0</version>
+  <description>
+
+    This package has the needed launch files for Vizzy's
+    simulation and real robot usage. One can find high-level
+    launches for the most common tasks but feel free to create
+    your own launches.
+
+  </description>
+
+  <maintainer email="miguelaragao91@gmail.com">Miguel Aragão</maintainer>
+  <author>Rui Figueiredo</author>
+
+  <license>BSD</license>
+
+  <url type="website">https://github.com/vislab-tecnico-lisboa/vizzy/vizzy_launch</url>
+  <url type="bugtracker">https://github.com/vislab-tecnico-lisboa/vizzy/issues</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export></export>
+</package>

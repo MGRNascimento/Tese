@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package>
+  <name>vizzy_control</name>
+  <version>1.0.0</version>
+  <description>
+
+    The vizzy_control package contains simulated ROS controllers
+    to actuate Vizzy's joints in gazebo and an action to control vizzy's gaze
+
+  </description>
+
+  <maintainer email="ruifigueiredo@isr.ist.utl.pt">Rui Figueiredo</maintainer>
+  <author>Rui Figueiredo</author>
+
+  <license>BSD</license>
+
+  <url type="website">https://github.com/vislab-tecnico-lisboa/vizzy/vizzy_control</url>
+  <url type="bugtracker">https://github.com/vislab-tecnico-lisboa/vizzy/issues</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>joint_state_controller</build_depend>
+  <build_depend>effort_controllers</build_depend>
+  <build_depend>velocity_controllers</build_depend>
+  <build_depend>joint_trajectory_controller</build_depend>
+  <build_depend>vizzy_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>tf2</build_depend>
+  <build_depend>tf2_ros</build_depend>
+  <run_depend>joint_state_controller</run_depend>
+  <run_depend>effort_controllers</run_depend>
+  <run_depend>velocity_controllers</run_depend>
+  <run_depend>vizzy_msgs</run_depend>
+  <run_depend>joint_trajectory_controller</run_depend>
+  <run_depend>tf2</run_depend>
+  <run_depend>tf2_ros</run_depend>
+</package>

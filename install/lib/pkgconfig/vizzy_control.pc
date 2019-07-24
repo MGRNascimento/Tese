@@ -1,0 +1,8 @@
+prefix=/home/miguel/catkin_ws/install
+
+Name: vizzy_control
+Description: Description of vizzy_control
+Version: 1.0.0
+Cflags: -I/home/miguel/catkin_ws/install/include
+Libs: -L/home/miguel/catkin_ws/install/lib 
+Requires: 
