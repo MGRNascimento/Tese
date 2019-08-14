@@ -19,6 +19,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/miguel/catkin_ws/src/baxter_simulator/baxter_sim_hardware/include"
   "/home/miguel/catkin_ws/devel/include"
+  "/home/miguel/catkin_ws/src/vision_opencv/cv_bridge/include"
   "/home/miguel/catkin_ws/src/baxter_simulator/baxter_sim_kinematics/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
@@ -29,6 +30,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/miguel/catkin_ws/build/vision_opencv/cv_bridge/src/CMakeFiles/cv_bridge.dir/DependInfo.cmake"
   "/home/miguel/catkin_ws/build/baxter_simulator/baxter_sim_kinematics/CMakeFiles/baxter_sim_kinematics.dir/DependInfo.cmake"
   )
 

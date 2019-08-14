@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(obj_recognition)
 
 ## Add support for C++11, supported in ROS Kinetic and newer
-# add_definitions(-std=c++11)
+ add_definitions(-std=c++11)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -16,6 +16,9 @@ find_package(catkin REQUIRED COMPONENTS
 	roslint
 	sensor_msgs
 	message_generation
+	visp_bridge
+	cv_bridge
+	VISP REQUIRED
 )
 
 ## System dependencies are found with CMake's conventions
@@ -143,6 +146,9 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
+add_executable(${PROJECT_NAME}_ImageRef src/ImageRef.cpp)
+add_executable(${PROJECT_NAME}_ImageCur src/ImageCur.cpp)
+add_executable(${PROJECT_NAME}_SIFTmatch src/SIFTmatch.cpp)
 add_executable(${PROJECT_NAME}_cloud_transformer src/cloud_transformer.cpp)
 add_executable(${PROJECT_NAME}_segmentation src/segmentation.cpp)
 add_executable(${PROJECT_NAME}_feature_extractor src/feature_extractor.cpp)
@@ -155,6 +161,9 @@ add_executable(${PROJECT_NAME}_feature_extractor src/feature_extractor.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
+add_dependencies(${PROJECT_NAME}_ImageRef ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_gencfg)
+add_dependencies(${PROJECT_NAME}_ImageCur ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_gencfg)
+add_dependencies(${PROJECT_NAME}_SIFTmatch ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_gencfg)
 add_dependencies(${PROJECT_NAME}_cloud_transformer ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_gencfg)
 add_dependencies(${PROJECT_NAME}_segmentation ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_gencfg)
 add_dependencies(${PROJECT_NAME}_feature_extractor ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_gencfg)
@@ -164,7 +173,10 @@ target_link_libraries(${PROJECT_NAME}_cloud_transformer
   ${catkin_LIBRARIES}
 
 )
+target_link_libraries(${PROJECT_NAME}_ImageRef ${catkin_LIBRARIES})
+target_link_libraries(${PROJECT_NAME}_ImageCur ${catkin_LIBRARIES})
 target_link_libraries(${PROJECT_NAME}_segmentation ${catkin_LIBRARIES})
+target_link_libraries(${PROJECT_NAME}_SIFTmatch ${catkin_LIBRARIES})
 target_link_libraries(${PROJECT_NAME}_feature_extractor ${catkin_LIBRARIES})
 #############
 ## Install ##

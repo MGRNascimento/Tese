@@ -3,10 +3,10 @@
 
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_video.dir/src/gazebo_ros_video.cpp.o: /home/miguel/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/gazebo_plugins/gazebo_ros_video.h
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_video.dir/src/gazebo_ros_video.cpp.o: /home/miguel/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/src/gazebo_ros_video.cpp
+gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_video.dir/src/gazebo_ros_video.cpp.o: /home/miguel/catkin_ws/src/vision_opencv/cv_bridge/include/cv_bridge/cv_bridge.h
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_video.dir/src/gazebo_ros_video.cpp.o: /opt/ros/kinetic/include/boost_161_condition_variable.h
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_video.dir/src/gazebo_ros_video.cpp.o: /opt/ros/kinetic/include/boost_161_pthread_condition_variable.h
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_video.dir/src/gazebo_ros_video.cpp.o: /opt/ros/kinetic/include/boost_161_pthread_condition_variable_fwd.h
-gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_video.dir/src/gazebo_ros_video.cpp.o: /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_video.dir/src/gazebo_ros_video.cpp.o: /opt/ros/kinetic/include/image_transport/camera_publisher.h
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_video.dir/src/gazebo_ros_video.cpp.o: /opt/ros/kinetic/include/image_transport/camera_subscriber.h
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_video.dir/src/gazebo_ros_video.cpp.o: /opt/ros/kinetic/include/image_transport/exception.h

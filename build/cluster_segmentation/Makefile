@@ -67,6 +67,17 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+
+.PHONY : install/local/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -90,6 +101,17 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -110,28 +132,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -391,6 +391,21 @@ _obj_recognition_generate_messages_check_deps_GetNormals/fast:
 .PHONY : _obj_recognition_generate_messages_check_deps_GetNormals/fast
 
 # Convenience name for target.
+cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/rule:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/rule
+.PHONY : cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+obj_recognition_generate_messages_lisp: cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/rule
+
+.PHONY : obj_recognition_generate_messages_lisp
+
+# fast build rule for target.
+obj_recognition_generate_messages_lisp/fast:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/build
+.PHONY : obj_recognition_generate_messages_lisp/fast
+
+# Convenience name for target.
 cluster_segmentation/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule:
 	cd /home/miguel/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
 .PHONY : cluster_segmentation/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
@@ -526,6 +541,36 @@ nodelet_generate_messages_eus/fast:
 .PHONY : nodelet_generate_messages_eus/fast
 
 # Convenience name for target.
+cluster_segmentation/CMakeFiles/pcl_ros_gencfg.dir/rule:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/pcl_ros_gencfg.dir/rule
+.PHONY : cluster_segmentation/CMakeFiles/pcl_ros_gencfg.dir/rule
+
+# Convenience name for target.
+pcl_ros_gencfg: cluster_segmentation/CMakeFiles/pcl_ros_gencfg.dir/rule
+
+.PHONY : pcl_ros_gencfg
+
+# fast build rule for target.
+pcl_ros_gencfg/fast:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/pcl_ros_gencfg.dir/build.make cluster_segmentation/CMakeFiles/pcl_ros_gencfg.dir/build
+.PHONY : pcl_ros_gencfg/fast
+
+# Convenience name for target.
+cluster_segmentation/CMakeFiles/obj_recognition_generate_messages.dir/rule:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages.dir/rule
+.PHONY : cluster_segmentation/CMakeFiles/obj_recognition_generate_messages.dir/rule
+
+# Convenience name for target.
+obj_recognition_generate_messages: cluster_segmentation/CMakeFiles/obj_recognition_generate_messages.dir/rule
+
+.PHONY : obj_recognition_generate_messages
+
+# fast build rule for target.
+obj_recognition_generate_messages/fast:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_generate_messages.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_generate_messages.dir/build
+.PHONY : obj_recognition_generate_messages/fast
+
+# Convenience name for target.
 cluster_segmentation/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule:
 	cd /home/miguel/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
 .PHONY : cluster_segmentation/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
@@ -569,21 +614,6 @@ _obj_recognition_generate_messages_check_deps_DetectedObject: cluster_segmentati
 _obj_recognition_generate_messages_check_deps_DetectedObject/fast:
 	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/_obj_recognition_generate_messages_check_deps_DetectedObject.dir/build.make cluster_segmentation/CMakeFiles/_obj_recognition_generate_messages_check_deps_DetectedObject.dir/build
 .PHONY : _obj_recognition_generate_messages_check_deps_DetectedObject/fast
-
-# Convenience name for target.
-cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/rule:
-	cd /home/miguel/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/rule
-.PHONY : cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-obj_recognition_generate_messages_lisp: cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/rule
-
-.PHONY : obj_recognition_generate_messages_lisp
-
-# fast build rule for target.
-obj_recognition_generate_messages_lisp/fast:
-	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/build
-.PHONY : obj_recognition_generate_messages_lisp/fast
 
 # Convenience name for target.
 cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/rule:
@@ -661,21 +691,6 @@ obj_recognition_gennodejs/fast:
 .PHONY : obj_recognition_gennodejs/fast
 
 # Convenience name for target.
-cluster_segmentation/CMakeFiles/obj_recognition_genpy.dir/rule:
-	cd /home/miguel/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_genpy.dir/rule
-.PHONY : cluster_segmentation/CMakeFiles/obj_recognition_genpy.dir/rule
-
-# Convenience name for target.
-obj_recognition_genpy: cluster_segmentation/CMakeFiles/obj_recognition_genpy.dir/rule
-
-.PHONY : obj_recognition_genpy
-
-# fast build rule for target.
-obj_recognition_genpy/fast:
-	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_genpy.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_genpy.dir/build
-.PHONY : obj_recognition_genpy/fast
-
-# Convenience name for target.
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_py.dir/rule:
 	cd /home/miguel/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_py.dir/rule
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_py.dir/rule
@@ -719,6 +734,66 @@ obj_recognition_gencfg: cluster_segmentation/CMakeFiles/obj_recognition_gencfg.d
 obj_recognition_gencfg/fast:
 	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_gencfg.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_gencfg.dir/build
 .PHONY : obj_recognition_gencfg/fast
+
+# Convenience name for target.
+cluster_segmentation/CMakeFiles/obj_recognition_genpy.dir/rule:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_genpy.dir/rule
+.PHONY : cluster_segmentation/CMakeFiles/obj_recognition_genpy.dir/rule
+
+# Convenience name for target.
+obj_recognition_genpy: cluster_segmentation/CMakeFiles/obj_recognition_genpy.dir/rule
+
+.PHONY : obj_recognition_genpy
+
+# fast build rule for target.
+obj_recognition_genpy/fast:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_genpy.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_genpy.dir/build
+.PHONY : obj_recognition_genpy/fast
+
+# Convenience name for target.
+cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/rule:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/rule
+.PHONY : cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/rule
+
+# Convenience name for target.
+obj_recognition_ImageRef: cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/rule
+
+.PHONY : obj_recognition_ImageRef
+
+# fast build rule for target.
+obj_recognition_ImageRef/fast:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/build
+.PHONY : obj_recognition_ImageRef/fast
+
+# Convenience name for target.
+cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/rule:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/rule
+.PHONY : cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/rule
+
+# Convenience name for target.
+obj_recognition_ImageCur: cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/rule
+
+.PHONY : obj_recognition_ImageCur
+
+# fast build rule for target.
+obj_recognition_ImageCur/fast:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/build
+.PHONY : obj_recognition_ImageCur/fast
+
+# Convenience name for target.
+cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/rule:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/rule
+.PHONY : cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/rule
+
+# Convenience name for target.
+obj_recognition_SIFTmatch: cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/rule
+
+.PHONY : obj_recognition_SIFTmatch
+
+# fast build rule for target.
+obj_recognition_SIFTmatch/fast:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/build
+.PHONY : obj_recognition_SIFTmatch/fast
 
 # Convenience name for target.
 cluster_segmentation/CMakeFiles/nodelet_generate_messages_py.dir/rule:
@@ -780,35 +855,86 @@ roslint/fast:
 	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/roslint.dir/build.make cluster_segmentation/CMakeFiles/roslint.dir/build
 .PHONY : roslint/fast
 
-# Convenience name for target.
-cluster_segmentation/CMakeFiles/pcl_ros_gencfg.dir/rule:
-	cd /home/miguel/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/pcl_ros_gencfg.dir/rule
-.PHONY : cluster_segmentation/CMakeFiles/pcl_ros_gencfg.dir/rule
+src/ImageCur.o: src/ImageCur.cpp.o
 
-# Convenience name for target.
-pcl_ros_gencfg: cluster_segmentation/CMakeFiles/pcl_ros_gencfg.dir/rule
+.PHONY : src/ImageCur.o
 
-.PHONY : pcl_ros_gencfg
+# target to build an object file
+src/ImageCur.cpp.o:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/src/ImageCur.cpp.o
+.PHONY : src/ImageCur.cpp.o
 
-# fast build rule for target.
-pcl_ros_gencfg/fast:
-	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/pcl_ros_gencfg.dir/build.make cluster_segmentation/CMakeFiles/pcl_ros_gencfg.dir/build
-.PHONY : pcl_ros_gencfg/fast
+src/ImageCur.i: src/ImageCur.cpp.i
 
-# Convenience name for target.
-cluster_segmentation/CMakeFiles/obj_recognition_generate_messages.dir/rule:
-	cd /home/miguel/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages.dir/rule
-.PHONY : cluster_segmentation/CMakeFiles/obj_recognition_generate_messages.dir/rule
+.PHONY : src/ImageCur.i
 
-# Convenience name for target.
-obj_recognition_generate_messages: cluster_segmentation/CMakeFiles/obj_recognition_generate_messages.dir/rule
+# target to preprocess a source file
+src/ImageCur.cpp.i:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/src/ImageCur.cpp.i
+.PHONY : src/ImageCur.cpp.i
 
-.PHONY : obj_recognition_generate_messages
+src/ImageCur.s: src/ImageCur.cpp.s
 
-# fast build rule for target.
-obj_recognition_generate_messages/fast:
-	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_generate_messages.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_generate_messages.dir/build
-.PHONY : obj_recognition_generate_messages/fast
+.PHONY : src/ImageCur.s
+
+# target to generate assembly for a file
+src/ImageCur.cpp.s:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/src/ImageCur.cpp.s
+.PHONY : src/ImageCur.cpp.s
+
+src/ImageRef.o: src/ImageRef.cpp.o
+
+.PHONY : src/ImageRef.o
+
+# target to build an object file
+src/ImageRef.cpp.o:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/src/ImageRef.cpp.o
+.PHONY : src/ImageRef.cpp.o
+
+src/ImageRef.i: src/ImageRef.cpp.i
+
+.PHONY : src/ImageRef.i
+
+# target to preprocess a source file
+src/ImageRef.cpp.i:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/src/ImageRef.cpp.i
+.PHONY : src/ImageRef.cpp.i
+
+src/ImageRef.s: src/ImageRef.cpp.s
+
+.PHONY : src/ImageRef.s
+
+# target to generate assembly for a file
+src/ImageRef.cpp.s:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/src/ImageRef.cpp.s
+.PHONY : src/ImageRef.cpp.s
+
+src/SIFTmatch.o: src/SIFTmatch.cpp.o
+
+.PHONY : src/SIFTmatch.o
+
+# target to build an object file
+src/SIFTmatch.cpp.o:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/src/SIFTmatch.cpp.o
+.PHONY : src/SIFTmatch.cpp.o
+
+src/SIFTmatch.i: src/SIFTmatch.cpp.i
+
+.PHONY : src/SIFTmatch.i
+
+# target to preprocess a source file
+src/SIFTmatch.cpp.i:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/src/SIFTmatch.cpp.i
+.PHONY : src/SIFTmatch.cpp.i
+
+src/SIFTmatch.s: src/SIFTmatch.cpp.s
+
+.PHONY : src/SIFTmatch.s
+
+# target to generate assembly for a file
+src/SIFTmatch.cpp.s:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/src/SIFTmatch.cpp.s
+.PHONY : src/SIFTmatch.cpp.s
 
 src/cloud_transformer.o: src/cloud_transformer.cpp.o
 
@@ -898,6 +1024,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... install/local"
 	@echo "... topic_tools_generate_messages_py"
 	@echo "... nodelet_topic_tools_gencfg"
 	@echo "... topic_tools_generate_messages_nodejs"
@@ -914,6 +1041,8 @@ help:
 	@echo "... pcl_msgs_generate_messages_eus"
 	@echo "... bond_generate_messages_py"
 	@echo "... _obj_recognition_generate_messages_check_deps_GetNormals"
+	@echo "... install/strip"
+	@echo "... obj_recognition_generate_messages_lisp"
 	@echo "... nodelet_generate_messages_nodejs"
 	@echo "... topic_tools_generate_messages_cpp"
 	@echo "... bond_generate_messages_lisp"
@@ -923,30 +1052,39 @@ help:
 	@echo "... pcl_msgs_generate_messages_nodejs"
 	@echo "... bond_generate_messages_nodejs"
 	@echo "... nodelet_generate_messages_eus"
+	@echo "... test"
+	@echo "... pcl_ros_gencfg"
+	@echo "... obj_recognition_generate_messages"
 	@echo "... topic_tools_generate_messages_lisp"
 	@echo "... obj_recognition_generate_messages_nodejs"
 	@echo "... _obj_recognition_generate_messages_check_deps_DetectedObject"
-	@echo "... obj_recognition_generate_messages_lisp"
-	@echo "... install/strip"
 	@echo "... obj_recognition_feature_extractor"
 	@echo "... obj_recognition_geneus"
 	@echo "... list_install_components"
 	@echo "... bond_generate_messages_eus"
 	@echo "... _obj_recognition_generate_messages_check_deps_SegmentedClustersArray"
 	@echo "... obj_recognition_gennodejs"
-	@echo "... edit_cache"
-	@echo "... obj_recognition_genpy"
 	@echo "... obj_recognition_generate_messages_py"
 	@echo "... obj_recognition_gencpp"
 	@echo "... obj_recognition_gencfg"
+	@echo "... edit_cache"
+	@echo "... obj_recognition_genpy"
+	@echo "... obj_recognition_ImageRef"
+	@echo "... obj_recognition_ImageCur"
+	@echo "... obj_recognition_SIFTmatch"
 	@echo "... nodelet_generate_messages_py"
 	@echo "... obj_recognition_cloud_transformer"
 	@echo "... obj_recognition_segmentation"
 	@echo "... roslint"
-	@echo "... install/local"
-	@echo "... pcl_ros_gencfg"
-	@echo "... obj_recognition_generate_messages"
-	@echo "... test"
+	@echo "... src/ImageCur.o"
+	@echo "... src/ImageCur.i"
+	@echo "... src/ImageCur.s"
+	@echo "... src/ImageRef.o"
+	@echo "... src/ImageRef.i"
+	@echo "... src/ImageRef.s"
+	@echo "... src/SIFTmatch.o"
+	@echo "... src/SIFTmatch.i"
+	@echo "... src/SIFTmatch.s"
 	@echo "... src/cloud_transformer.o"
 	@echo "... src/cloud_transformer.i"
 	@echo "... src/cloud_transformer.s"

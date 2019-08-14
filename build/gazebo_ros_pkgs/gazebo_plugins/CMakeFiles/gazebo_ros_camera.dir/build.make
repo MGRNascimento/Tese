@@ -133,7 +133,7 @@ gazebo_ros_camera_EXTERNAL_OBJECTS =
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /opt/ros/kinetic/lib/libactionlib.so
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /opt/ros/kinetic/lib/libtf2.so
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /opt/ros/kinetic/lib/libcv_bridge.so
+/home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /home/miguel/catkin_ws/devel/lib/libcv_bridge.so
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
@@ -179,6 +179,9 @@ gazebo_ros_camera_EXTERNAL_OBJECTS =
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /usr/lib/x86_64-linux-gnu/libuuid.so
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /usr/lib/x86_64-linux-gnu/libignition-math4.so.4.0.0
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
+/home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
+/home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
+/home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /usr/lib/liblapack.so
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /usr/local/lib/libgazebo.so
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /usr/local/lib/libgazebo_client.so
@@ -229,7 +232,6 @@ gazebo_ros_camera_EXTERNAL_OBJECTS =
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /opt/ros/kinetic/lib/libactionlib.so
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /opt/ros/kinetic/lib/libtf2.so
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /opt/ros/kinetic/lib/libcv_bridge.so
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_camera.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1

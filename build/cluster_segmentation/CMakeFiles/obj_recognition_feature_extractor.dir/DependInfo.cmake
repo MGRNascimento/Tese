@@ -19,8 +19,12 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/miguel/catkin_ws/devel/include"
   "/home/miguel/catkin_ws/src/cluster_segmentation/include"
+  "/home/miguel/catkin_ws/src/vision_visp/visp_bridge/include"
+  "/home/miguel/catkin_ws/src/vision_opencv/cv_bridge/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  "/opt/ros/kinetic/include/opencv-3.3.1-dev"
+  "/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"
   "/usr/include/eigen3"
   "/usr/include/pcl-1.7"
   "/usr/include/ni"
@@ -35,10 +39,14 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/lib/openmpi/include"
   "/usr/lib/openmpi/include/openmpi"
   "/usr/include/tcl"
+  "/usr/include/libusb-1.0"
+  "/usr/include/OGRE"
+  "/usr/include/ois"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/miguel/catkin_ws/build/vision_opencv/cv_bridge/src/CMakeFiles/cv_bridge.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -81,10 +81,13 @@ int main(int argc, char** argv)
   // We can plan a motion for this group to a desired pose for the
   // end-effector.
   geometry_msgs::Pose target_pose1;
-  target_pose1.orientation.w = 1.0;
-  target_pose1.position.x = 0.3;
+  target_pose1.orientation.w = 0.5;
+  target_pose1.orientation.x = 0.5;
+  target_pose1.orientation.y = 0.5;
+  target_pose1.orientation.z = 0.5;
+  target_pose1.position.x = -0.3;
   target_pose1.position.y = 0.7;
-  target_pose1.position.z = 1.7;
+  target_pose1.position.z = 1.3;
   move_group.setPoseTarget(target_pose1);
 
   // Now, we call the planner to compute the plan and visualize it.
@@ -97,7 +100,7 @@ int main(int argc, char** argv)
   /*geometry_msgs::PoseStamped current_pose;
   current_pose=move_group.getCurrentPose();
 
-  printf("CURRENT POSE: %f %f %f\n",current_pose.pose.position.x,current_pose.pose.position.y,current_pose.pose.position.z);*/
+  printf("CURRENT POSE: %f %f %f\n",current_pose.pose.position.x,current_pose.pose.position.y,current_pose.pose.position.z);
 
   bool success = (move_group.plan(my_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
 
@@ -123,7 +126,7 @@ int main(int argc, char** argv)
   // and report success on execution of a trajectory.
 
   /* Uncomment below line when working with a real robot */
-  /* move_group.move(); */
+   move_group.move(); 
 
   // Planning to a joint-space goal
   // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

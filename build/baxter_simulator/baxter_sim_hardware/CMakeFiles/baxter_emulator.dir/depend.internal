@@ -20,10 +20,10 @@ baxter_simulator/baxter_sim_hardware/CMakeFiles/baxter_emulator.dir/src/baxter_e
  /home/miguel/catkin_ws/src/baxter_simulator/baxter_sim_hardware/include/baxter_sim_hardware/baxter_emulator.h
  /home/miguel/catkin_ws/src/baxter_simulator/baxter_sim_hardware/src/baxter_emulator.cpp
  /home/miguel/catkin_ws/src/baxter_simulator/baxter_sim_kinematics/include/baxter_sim_kinematics/arm_kinematics.h
+ /home/miguel/catkin_ws/src/vision_opencv/cv_bridge/include/cv_bridge/cv_bridge.h
  /opt/ros/kinetic/include/boost_161_condition_variable.h
  /opt/ros/kinetic/include/boost_161_pthread_condition_variable.h
  /opt/ros/kinetic/include/boost_161_pthread_condition_variable_fwd.h
- /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
  /opt/ros/kinetic/include/geometry_msgs/Point.h
  /opt/ros/kinetic/include/geometry_msgs/Point32.h
  /opt/ros/kinetic/include/geometry_msgs/PointStamped.h

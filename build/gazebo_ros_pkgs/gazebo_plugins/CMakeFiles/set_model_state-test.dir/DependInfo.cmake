@@ -21,6 +21,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/miguel/catkin_ws/devel/include"
   "/home/miguel/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include"
+  "/home/miguel/catkin_ws/src/vision_opencv/cv_bridge/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/opt/ros/kinetic/include/opencv-3.3.1-dev"
@@ -43,6 +44,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/miguel/catkin_ws/build/gtest/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/miguel/catkin_ws/build/vision_opencv/cv_bridge/src/CMakeFiles/cv_bridge.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

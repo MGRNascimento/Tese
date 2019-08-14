@@ -6,11 +6,11 @@ gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_prosilica.dir/src/gazebo_ro
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_prosilica.dir/src/gazebo_ros_prosilica.cpp.o: /home/miguel/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/gazebo_plugins/gazebo_ros_prosilica.h
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_prosilica.dir/src/gazebo_ros_prosilica.cpp.o: /home/miguel/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/gazebo_plugins/gazebo_ros_utils.h
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_prosilica.dir/src/gazebo_ros_prosilica.cpp.o: /home/miguel/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/src/gazebo_ros_prosilica.cpp
+gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_prosilica.dir/src/gazebo_ros_prosilica.cpp.o: /home/miguel/catkin_ws/src/vision_opencv/cv_bridge/include/cv_bridge/cv_bridge.h
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_prosilica.dir/src/gazebo_ros_prosilica.cpp.o: /opt/ros/kinetic/include/boost_161_condition_variable.h
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_prosilica.dir/src/gazebo_ros_prosilica.cpp.o: /opt/ros/kinetic/include/boost_161_pthread_condition_variable.h
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_prosilica.dir/src/gazebo_ros_prosilica.cpp.o: /opt/ros/kinetic/include/boost_161_pthread_condition_variable_fwd.h
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_prosilica.dir/src/gazebo_ros_prosilica.cpp.o: /opt/ros/kinetic/include/camera_info_manager/camera_info_manager.h
-gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_prosilica.dir/src/gazebo_ros_prosilica.cpp.o: /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_prosilica.dir/src/gazebo_ros_prosilica.cpp.o: /opt/ros/kinetic/include/diagnostic_msgs/DiagnosticArray.h
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_prosilica.dir/src/gazebo_ros_prosilica.cpp.o: /opt/ros/kinetic/include/diagnostic_msgs/DiagnosticStatus.h
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_prosilica.dir/src/gazebo_ros_prosilica.cpp.o: /opt/ros/kinetic/include/diagnostic_msgs/KeyValue.h

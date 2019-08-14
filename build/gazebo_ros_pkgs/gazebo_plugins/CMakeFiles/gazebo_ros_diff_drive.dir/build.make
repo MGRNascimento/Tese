@@ -133,7 +133,7 @@ gazebo_ros_diff_drive_EXTERNAL_OBJECTS =
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/libactionlib.so
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/libtf2.so
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/libcv_bridge.so
+/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /home/miguel/catkin_ws/devel/lib/libcv_bridge.so
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
@@ -235,7 +235,9 @@ gazebo_ros_diff_drive_EXTERNAL_OBJECTS =
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/libactionlib.so
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/libtf2.so
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/libcv_bridge.so
+/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
+/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
+/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
@@ -265,19 +267,13 @@ gazebo_ros_diff_drive_EXTERNAL_OBJECTS =
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/libroscpp_serialization.so
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/librostime.so
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /opt/ros/kinetic/lib/libcpp_common.so
-/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
 /home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so: gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_diff_drive.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/miguel/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/miguel/catkin_ws/devel/lib/libgazebo_ros_diff_drive.so"
 	cd /home/miguel/catkin_ws/build/gazebo_ros_pkgs/gazebo_plugins && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gazebo_ros_diff_drive.dir/link.txt --verbose=$(VERBOSE)

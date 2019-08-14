@@ -4,10 +4,10 @@
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_video.dir/src/gazebo_ros_video.cpp.o
  /home/miguel/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/gazebo_plugins/gazebo_ros_video.h
  /home/miguel/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/src/gazebo_ros_video.cpp
+ /home/miguel/catkin_ws/src/vision_opencv/cv_bridge/include/cv_bridge/cv_bridge.h
  /opt/ros/kinetic/include/boost_161_condition_variable.h
  /opt/ros/kinetic/include/boost_161_pthread_condition_variable.h
  /opt/ros/kinetic/include/boost_161_pthread_condition_variable_fwd.h
- /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
  /opt/ros/kinetic/include/image_transport/camera_publisher.h
  /opt/ros/kinetic/include/image_transport/camera_subscriber.h
  /opt/ros/kinetic/include/image_transport/exception.h

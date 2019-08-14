@@ -133,7 +133,7 @@ camera_synchronizer_EXTERNAL_OBJECTS =
 /home/miguel/catkin_ws/devel/lib/gazebo_plugins/camera_synchronizer: /opt/ros/kinetic/lib/libactionlib.so
 /home/miguel/catkin_ws/devel/lib/gazebo_plugins/camera_synchronizer: /opt/ros/kinetic/lib/libtf2.so
 /home/miguel/catkin_ws/devel/lib/gazebo_plugins/camera_synchronizer: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/miguel/catkin_ws/devel/lib/gazebo_plugins/camera_synchronizer: /opt/ros/kinetic/lib/libcv_bridge.so
+/home/miguel/catkin_ws/devel/lib/gazebo_plugins/camera_synchronizer: /home/miguel/catkin_ws/devel/lib/libcv_bridge.so
 /home/miguel/catkin_ws/devel/lib/gazebo_plugins/camera_synchronizer: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 /home/miguel/catkin_ws/devel/lib/gazebo_plugins/camera_synchronizer: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
 /home/miguel/catkin_ws/devel/lib/gazebo_plugins/camera_synchronizer: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
@@ -229,7 +229,9 @@ camera_synchronizer_EXTERNAL_OBJECTS =
 /home/miguel/catkin_ws/devel/lib/gazebo_plugins/camera_synchronizer: /opt/ros/kinetic/lib/libactionlib.so
 /home/miguel/catkin_ws/devel/lib/gazebo_plugins/camera_synchronizer: /opt/ros/kinetic/lib/libtf2.so
 /home/miguel/catkin_ws/devel/lib/gazebo_plugins/camera_synchronizer: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/miguel/catkin_ws/devel/lib/gazebo_plugins/camera_synchronizer: /opt/ros/kinetic/lib/libcv_bridge.so
+/home/miguel/catkin_ws/devel/lib/gazebo_plugins/camera_synchronizer: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
+/home/miguel/catkin_ws/devel/lib/gazebo_plugins/camera_synchronizer: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
+/home/miguel/catkin_ws/devel/lib/gazebo_plugins/camera_synchronizer: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 /home/miguel/catkin_ws/devel/lib/gazebo_plugins/camera_synchronizer: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 /home/miguel/catkin_ws/devel/lib/gazebo_plugins/camera_synchronizer: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
 /home/miguel/catkin_ws/devel/lib/gazebo_plugins/camera_synchronizer: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1

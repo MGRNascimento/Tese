@@ -7,11 +7,11 @@ gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/gazebo_ros_prosilica.dir/src/gazebo_ro
  /home/miguel/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/gazebo_plugins/gazebo_ros_prosilica.h
  /home/miguel/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/gazebo_plugins/gazebo_ros_utils.h
  /home/miguel/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/src/gazebo_ros_prosilica.cpp
+ /home/miguel/catkin_ws/src/vision_opencv/cv_bridge/include/cv_bridge/cv_bridge.h
  /opt/ros/kinetic/include/boost_161_condition_variable.h
  /opt/ros/kinetic/include/boost_161_pthread_condition_variable.h
  /opt/ros/kinetic/include/boost_161_pthread_condition_variable_fwd.h
  /opt/ros/kinetic/include/camera_info_manager/camera_info_manager.h
- /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
  /opt/ros/kinetic/include/diagnostic_msgs/DiagnosticArray.h
  /opt/ros/kinetic/include/diagnostic_msgs/DiagnosticStatus.h
  /opt/ros/kinetic/include/diagnostic_msgs/KeyValue.h

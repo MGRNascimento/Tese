@@ -608,3 +608,33 @@ Linking C executable cmTC_f867d
 make[1]: Leaving directory '/home/miguel/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
+Change Dir: /home/miguel/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_94e5d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_94e5d.dir/build.make CMakeFiles/cmTC_94e5d.dir/build
+make[1]: Entering directory '/home/miguel/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_94e5d.dir/src.cxx.o
+/usr/bin/c++     -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTC_94e5d.dir/src.cxx.o -c /home/miguel/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_94e5d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94e5d.dir/link.txt --verbose=1
+/usr/bin/c++    -DCOMPILER_SUPPORTS_CXX11    CMakeFiles/cmTC_94e5d.dir/src.cxx.o  -o cmTC_94e5d -rdynamic 
+make[1]: Leaving directory '/home/miguel/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_GNUXX11 succeeded with the following output:
+Change Dir: /home/miguel/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9b42d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9b42d.dir/build.make CMakeFiles/cmTC_9b42d.dir/build
+make[1]: Entering directory '/home/miguel/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9b42d.dir/src.cxx.o
+/usr/bin/c++     -DCOMPILER_SUPPORTS_GNUXX11   -std=gnu++11 -o CMakeFiles/cmTC_9b42d.dir/src.cxx.o -c /home/miguel/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9b42d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b42d.dir/link.txt --verbose=1
+/usr/bin/c++    -DCOMPILER_SUPPORTS_GNUXX11    CMakeFiles/cmTC_9b42d.dir/src.cxx.o  -o cmTC_9b42d -rdynamic 
+make[1]: Leaving directory '/home/miguel/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
