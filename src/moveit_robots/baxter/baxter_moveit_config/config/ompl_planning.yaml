@@ -9,12 +9,17 @@ planner_configs:
     type: geometric::RRTConnect
   LazyRRTkConfigDefault:
     type: geometric::LazyRRT
+  RRTstarkConfigDefault:
+    type: geometric::RRTstar
   ESTkConfigDefault:
     type: geometric::EST
   KPIECEkConfigDefault:
     type: geometric::KPIECE
   RRTStarkConfigDefault:
     type: geometric::RRTstar
+    range: 0.0  # Max motion added to tree. ==> maxDistance_ default: 0.0, if 0.0, set on setup()
+    goal_bias: 0.05  # When close to goal select goal, with this probability? default: 0.05
+    delay_collision_checking: 1  # Stop collision checking as soon as C-free parent found. default 1
   BKPIECEkConfigDefault:
     type: geometric::BKPIECE
 left_arm:
@@ -24,12 +29,13 @@ left_arm:
     - LBKPIECEkConfigDefault
     - RRTkConfigDefault
     - RRTConnectkConfigDefault
+    - RRTstarkConfigDefault
     - ESTkConfigDefault
     - KPIECEkConfigDefault
     - BKPIECEkConfigDefault
     - RRTStarkConfigDefault
   projection_evaluator: joints(left_s0,left_s1)
-  longest_valid_segment_fraction: 0.05
+  longest_valid_segment_fraction: 0.02
 right_arm:
   default_planner_config: RRTConnectkConfigDefault
   planner_configs:
@@ -37,12 +43,13 @@ right_arm:
     - LBKPIECEkConfigDefault
     - RRTkConfigDefault
     - RRTConnectkConfigDefault
+    - RRTstarkConfigDefault
     - ESTkConfigDefault
     - KPIECEkConfigDefault
     - BKPIECEkConfigDefault
     - RRTStarkConfigDefault
   projection_evaluator: joints(right_s0,right_s1)
-  longest_valid_segment_fraction: 0.05
+  longest_valid_segment_fraction: 0.02
 both_arms:
   default_planner_config: RRTConnectkConfigDefault
   planner_configs:
@@ -50,12 +57,13 @@ both_arms:
     - LBKPIECEkConfigDefault
     - RRTkConfigDefault
     - RRTConnectkConfigDefault
+    - RRTstarkConfigDefault
     - ESTkConfigDefault
     - KPIECEkConfigDefault
     - BKPIECEkConfigDefault
     - RRTStarkConfigDefault
   projection_evaluator: joints(right_s0,right_s1)
-  longest_valid_segment_fraction: 0.05
+  longest_valid_segment_fraction: 0.02
 left_hand:
   default_planner_config: RRTConnectkConfigDefault
   planner_configs:
@@ -63,6 +71,7 @@ left_hand:
     - LBKPIECEkConfigDefault
     - RRTkConfigDefault
     - RRTConnectkConfigDefault
+    - RRTstarkConfigDefault
     - ESTkConfigDefault
     - KPIECEkConfigDefault
     - BKPIECEkConfigDefault
@@ -74,6 +83,7 @@ right_hand:
     - LBKPIECEkConfigDefault
     - RRTkConfigDefault
     - RRTConnectkConfigDefault
+    - RRTstarkConfigDefault
     - ESTkConfigDefault
     - KPIECEkConfigDefault
     - BKPIECEkConfigDefault

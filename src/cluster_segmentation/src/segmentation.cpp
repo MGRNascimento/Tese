@@ -51,7 +51,7 @@ public:
         table_pub = m_nh.advertise<sensor_msgs::PointCloud2>("/obj_recognition/table", 1);
         /*marker_pub = m_nh.advertise<visualization_msgs::MarkerArray>("visualization_marker_array", 1);*/
         marker_pub = m_nh.advertise<visualization_msgs::Marker>("visualization_marker", 100);
-        coll_obj_pub=m_nh.advertise<visualization_msgs::MarkerArray>("/obj_recognition/collision_objects",1);
+        coll_obj_pub=m_nh.advertise<visualization_msgs::MarkerArray>("/obj_recognition/collision_objects",100);
 
     }
 
@@ -235,7 +235,8 @@ void segmentation::cloud_cb (const sensor_msgs::PointCloud2ConstPtr& cloud_msg)
         // create a pcl object to hold the extracted cluster
 
         for (std::vector<int>::const_iterator p_it = it->indices.begin (); p_it != it->indices.end (); ++p_it){
-            for(i=1;i<10;i++){
+            for(i=1;i<9;i++){
+                //printf("\n(%f %f %f) - (%f %f %f) -> %f\n",rightLinks.points[i].x,rightLinks.points[i].y,rightLinks.points[i].z,rightLinks.points[i-1].x,rightLinks.points[i-1].y,rightLinks.points[i-1].z,pow(rightLinks.points[i].x-rightLinks.points[i-1].x,2)+pow(rightLinks.points[i].y-rightLinks.points[i-1].y,2)+pow(rightLinks.points[i].z-rightLinks.points[i-1].z,2));
                 if(checkCylinder(rightLinks.points[i-1], rightLinks.points[i], 
                 pow(rightLinks.points[i].x-rightLinks.points[i-1].x,2)+pow(rightLinks.points[i].y-rightLinks.points[i-1].y,2)+pow(rightLinks.points[i].z-rightLinks.points[i-1].z,2), 
                 pow(0.1,2), xyzCloudPtrRansacFiltered->points[*p_it]) || 
@@ -272,6 +273,7 @@ void segmentation::cloud_cb (const sensor_msgs::PointCloud2ConstPtr& cloud_msg)
         //std::string info_string = string(cloudPtr->points.back().x);
         //printf(clusterData.position[0]);
         marker.markers[aux-2]=bounding_box(*clusterPtr, aux);
+
         aux++;
         // convert to pcl::PCLPointCloud2
         pcl::toPCLPointCloud2(*clusterPtr, outputPCL);
@@ -310,12 +312,12 @@ void segmentation::cloud_cb (const sensor_msgs::PointCloud2ConstPtr& cloud_msg)
     marker_pub.publish(rightLinks);
     
     marker_pub.publish(leftLinks);
-    ros::Duration(1).sleep();
+    //ros::Duration(10).sleep();
 }
 
 
-visualization_msgs::Marker segmentation::bounding_box(pcl::PointCloud<pcl::PointXYZRGB> cloudrgb, int aux)
-{
+visualization_msgs::Marker segmentation::bounding_box(pcl::PointCloud<pcl::PointXYZRGB> cloudrgb, int aux){
+    
   pcl::PointCloud<pcl::PointXYZ> *cloudxyz= new pcl::PointCloud<pcl::PointXYZ>;
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (cloudxyz);
   copyPointCloud(cloudrgb, *cloud);
@@ -371,9 +373,9 @@ visualization_msgs::Marker segmentation::bounding_box(pcl::PointCloud<pcl::Point
     marker.pose.orientation.w=quat.w();
 
     // Set the scale of the marker -- 1x1x1 here means 1m on a side
-    marker.scale.x = max_point_OBB.x - min_point_OBB.x;
-    marker.scale.y = max_point_OBB.y - min_point_OBB.y;
-    marker.scale.z = max_point_OBB.z - min_point_OBB.z;
+    marker.scale.x = max_point_OBB.x - min_point_OBB.x+0.03;
+    marker.scale.y = max_point_OBB.y - min_point_OBB.y+0.03;
+    marker.scale.z = max_point_OBB.z - min_point_OBB.z+0.03;
 
     // Set the color -- be sure to set alpha to something non-zero!
     marker.color.r = 0.0f;

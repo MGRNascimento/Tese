@@ -12,7 +12,7 @@ public:
     explicit ImageCur(ros::NodeHandle nh) : m_nh(nh)  {
 
         // define the subscriber and publisher
-        m_sub = m_nh.subscribe ("/cameras/head_camera/image", 1, &ImageCur::rePublish, this);
+        m_sub = m_nh.subscribe ("/cameras/left_hand_camera/image", 1, &ImageCur::rePublish, this);
         m_pub = m_nh.advertise<sensor_msgs::Image> ("/obj_recognition/image_cur",1);
         
     }
@@ -31,7 +31,7 @@ void ImageCur::rePublish (const sensor_msgs::Image& src){
 
     m_pub.publish(src);
     m_sub.shutdown();
-    printf("Sent current image\n");
+    printf("Sent current image (%d, %d)\n",src.height, src.width);
     ros::shutdown();
 
     return;

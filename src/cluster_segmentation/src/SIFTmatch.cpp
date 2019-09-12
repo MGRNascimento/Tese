@@ -54,11 +54,6 @@ public:
 
 void SIFTmatch::refConversion(const sensor_msgs::Image& src){
 
-   /*I_ref = visp_bridge::toVispImage(src);
-   printf("Reference image converted\n");
-   flag++;
-   featureExtractor();
-   return;*/
 
    cv_bridge::CvImagePtr cv_ptr;
     try
@@ -82,11 +77,6 @@ void SIFTmatch::refConversion(const sensor_msgs::Image& src){
 
 void SIFTmatch::curConversion(const sensor_msgs::Image& src){
 
-   /*I_cur = visp_bridge::toVispImage(src);
-   printf("Current image converted\n");
-   flag++;
-   featureExtractor();
-   return;*/
    
    cv_bridge::CvImagePtr cv_ptr;
     try
@@ -108,45 +98,7 @@ void SIFTmatch::curConversion(const sensor_msgs::Image& src){
 }
 
 // define callback function
-void SIFTmatch::featureExtractor (){
-
-    /*if (flag<2){
-        printf("Not enough images\n");
-        return;
-    }
-        
-    printf("Starting matching\n");
-
-    const std::string detectorName = "ORB";
-    const std::string extractorName = "ORB";
-    const std::string matcherName = "BruteForce-Hamming";
-    vpKeyPoint::vpFilterMatchingType filterType = vpKeyPoint::ratioDistanceThreshold;
-    vpKeyPoint keypoint(detectorName, extractorName, matcherName, filterType);
-    std::cout << "Reference keypoints=" << keypoint.buildReference(I_ref) << std::endl;
- 
-    vpImage<unsigned char> Idisp;
-    Idisp.resize(I_ref.getHeight(), 2 * I_ref.getWidth());
-    Idisp.insert(I_ref, vpImagePoint(0, 0));
-    Idisp.insert(I_cur, vpImagePoint(0, I_ref.getWidth()));
-    vpDisplayOpenCV d(Idisp, 0, 0, "Matching keypoints with SIFT keypoints");
-    vpDisplay::display(Idisp);
-    vpDisplay::flush(Idisp);
-    vpDisplay::display(Idisp);
-    vpDisplay::displayLine(Idisp, vpImagePoint(0, I_ref.getWidth()), vpImagePoint(I_ref.getHeight(), I_ref.getWidth()),
-                           vpColor::white, 2);
-
-    unsigned int nbMatch = keypoint.matchPoint(I_cur);
-    std::cout << "Matches=" << nbMatch << std::endl;
-    vpImagePoint iPref, iPcur;
-    for (unsigned int i = 0; i < nbMatch; i++) {
-      keypoint.getMatchedPoints(i, iPref, iPcur);
-      vpDisplay::displayLine(Idisp, iPref, iPcur + vpImagePoint(0, I_ref.getWidth()), vpColor::green);
-    }
-    vpDisplay::flush(Idisp);
-    //m_sub.shutdown();
-    ros::Duration(10).sleep();*/
-
-    
+void SIFTmatch::featureExtractor (){  
 
     if ( I_ref.empty() || I_cur.empty() )
     {
@@ -174,12 +126,23 @@ void SIFTmatch::featureExtractor (){
 
     const float ratio_thresh = 0.7f;
     std::vector<DMatch> good_matches;
+    Mat gripper_mask=imread("/home/miguel/catkin_ws/mask/left0000.jpg",CV_LOAD_IMAGE_COLOR);
+    printf("MASK SIZE: %d %d\n",gripper_mask.rows,gripper_mask.cols);
+    printf("IMAGE SIZE: %d %d\n", I_ref.rows, I_ref.cols);
     
     for (size_t i = 0; i < knn_matches.size(); i++)
     {
         if (knn_matches[i][0].distance < ratio_thresh * knn_matches[i][1].distance)
         {
-            good_matches.push_back(knn_matches[i][0]);
+            //printf("(%d, %d)\n",cvRound(keypoints1[knn_matches[i][0].queryIdx].pt.x),cvRound(keypoints1[knn_matches[i][0].queryIdx].pt.y));
+            Vec3b intensity=gripper_mask.at<Vec3b>(cvRound(keypoints1[knn_matches[i][0].queryIdx].pt.y),cvRound(keypoints1[knn_matches[i][0].queryIdx].pt.x));
+            printf("%d %d %d\n",intensity.val[0],intensity.val[1],intensity.val[2]);
+            if((gripper_mask.at<Vec3b>(cvRound(keypoints1[knn_matches[i][0].queryIdx].pt.y),cvRound(keypoints1[knn_matches[i][0].queryIdx].pt.x)).val[0]!=0 ||
+            gripper_mask.at<Vec3b>(cvRound(keypoints1[knn_matches[i][0].queryIdx].pt.y),cvRound(keypoints1[knn_matches[i][0].queryIdx].pt.x)).val[1]!=0 || 
+            gripper_mask.at<Vec3b>(cvRound(keypoints1[knn_matches[i][0].queryIdx].pt.y),cvRound(keypoints1[knn_matches[i][0].queryIdx].pt.x)).val[2]!=0)){
+                good_matches.push_back(knn_matches[i][0]);
+            }
+            
         }
     }
 
