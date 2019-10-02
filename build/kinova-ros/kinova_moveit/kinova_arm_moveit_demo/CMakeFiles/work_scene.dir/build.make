@@ -93,6 +93,7 @@ work_scene_EXTERNAL_OBJECTS =
 /home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libmoveit_common_planning_interface_objects.so
 /home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libmoveit_planning_scene_interface.so
 /home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libmoveit_move_group_interface.so
+/home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libactionlib.so
 /home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libmoveit_warehouse.so
 /home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libwarehouse_ros.so
 /home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libmoveit_pick_place_planner.so
@@ -106,6 +107,7 @@ work_scene_EXTERNAL_OBJECTS =
 /home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libmoveit_plan_execution.so
 /home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libmoveit_planning_scene_monitor.so
 /home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libmoveit_collision_plugin_loader.so
+/home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libchomp_motion_planner.so
 /home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libmoveit_lazy_free_space_updater.so
 /home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libmoveit_point_containment_filter.so
 /home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libmoveit_occupancy_map_monitor.so
@@ -128,6 +130,7 @@ work_scene_EXTERNAL_OBJECTS =
 /home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libmoveit_profiler.so
 /home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libmoveit_trajectory_processing.so
 /home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libmoveit_distance_field.so
+/home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libmoveit_collision_distance_field.so
 /home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libmoveit_kinematics_metrics.so
 /home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libmoveit_dynamics_solver.so
 /home/miguel/catkin_ws/devel/lib/kinova_arm_moveit_demo/work_scene: /opt/ros/kinetic/lib/libmoveit_utils.so

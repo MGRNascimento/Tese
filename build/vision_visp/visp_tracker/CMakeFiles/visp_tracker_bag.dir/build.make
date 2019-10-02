@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/miguel/catkin_ws/build
 include vision_visp/visp_tracker/CMakeFiles/visp_tracker_bag.dir/progress.make
 
 vision_visp/visp_tracker/CMakeFiles/visp_tracker_bag:
-	cd /home/miguel/catkin_ws/build/vision_visp/visp_tracker && /opt/ros/kinetic/share/catkin/cmake/test/download_checkmd5.py https://github.com/lagadic/vision_visp/releases/download/vision_visp-0.5.0/tutorial-static-box.bag /home/miguel/catkin_ws/devel/share/visp_tracker/bag/tutorial-static-box.bag 1578dedd48d3f9f5515a8737845ae882 --ignore-error
+	cd /home/miguel/catkin_ws/build/vision_visp/visp_tracker && /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/download_checkmd5.py https://github.com/lagadic/vision_visp/releases/download/vision_visp-0.5.0/tutorial-static-box.bag /home/miguel/catkin_ws/devel/share/visp_tracker/bag/tutorial-static-box.bag 1578dedd48d3f9f5515a8737845ae882 --ignore-error
 
 visp_tracker_bag: vision_visp/visp_tracker/CMakeFiles/visp_tracker_bag
 visp_tracker_bag: vision_visp/visp_tracker/CMakeFiles/visp_tracker_bag.dir/build.make

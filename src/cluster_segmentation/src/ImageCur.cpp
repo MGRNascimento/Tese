@@ -30,11 +30,12 @@ private:
 void ImageCur::rePublish (const sensor_msgs::Image& src){
 
     m_pub.publish(src);
-    m_sub.shutdown();
+    //m_sub.shutdown();
     printf("Sent current image (%d, %d)\n",src.height, src.width);
-    ros::shutdown();
+    //ros::shutdown();
+    ros::Duration(0.5).sleep();
 
-    return;
+    //return;
 }
 
 int main (int argc, char** argv)

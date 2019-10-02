@@ -1,6 +1,8 @@
 (cl:defpackage obj_recognition-msg
   (:use )
   (:export
+   "<COLLISIONOBJECTS>"
+   "COLLISIONOBJECTS"
    "<DETECTEDOBJECT>"
    "DETECTEDOBJECT"
    "<DETECTEDOBJECTSARRAY>"

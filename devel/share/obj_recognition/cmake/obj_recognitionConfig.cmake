@@ -121,6 +121,8 @@ foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")
     list(APPEND obj_recognition_LIBRARIES ${library})
+  elseif(${library} MATCHES "^-l")
+    list(APPEND obj_recognition_LIBRARIES ${library})
   elseif(TARGET ${library})
     list(APPEND obj_recognition_LIBRARIES ${library})
   elseif(IS_ABSOLUTE ${library})
@@ -160,7 +162,7 @@ foreach(t ${obj_recognition_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "message_runtime")
+set(depends "message_runtime;moveit_core;moveit_ros_planning_interface")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

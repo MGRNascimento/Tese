@@ -5,6 +5,8 @@
   :depends-on (:roslisp-msg-protocol :roslisp-utils :sensor_msgs-msg
 )
   :components ((:file "_package")
+    (:file "CollisionObjects" :depends-on ("_package_CollisionObjects"))
+    (:file "_package_CollisionObjects" :depends-on ("_package"))
     (:file "DetectedObject" :depends-on ("_package_DetectedObject"))
     (:file "_package_DetectedObject" :depends-on ("_package"))
     (:file "DetectedObjectsArray" :depends-on ("_package_DetectedObjectsArray"))

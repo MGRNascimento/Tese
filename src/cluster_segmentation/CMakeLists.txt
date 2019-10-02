@@ -8,6 +8,8 @@ project(obj_recognition)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+	moveit_core
+	moveit_ros_planning_interface
 	dynamic_reconfigure
 	pcl_conversions
 	pcl_ros
@@ -120,6 +122,8 @@ catkin_package(
 #  CATKIN_DEPENDS roscpp rospy std_msgs
 #  DEPENDS system_lib
 CATKIN_DEPENDS message_runtime
+	moveit_core
+	moveit_ros_planning_interface
 )
 
 ###########

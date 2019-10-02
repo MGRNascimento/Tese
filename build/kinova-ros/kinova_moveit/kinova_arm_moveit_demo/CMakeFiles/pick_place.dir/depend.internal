@@ -148,11 +148,19 @@ kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/pick_place.dir/src/pi
  /opt/ros/kinetic/include/moveit_msgs/MotionPlanDetailedResponse.h
  /opt/ros/kinetic/include/moveit_msgs/MotionPlanRequest.h
  /opt/ros/kinetic/include/moveit_msgs/MotionPlanResponse.h
+ /opt/ros/kinetic/include/moveit_msgs/MoveGroupAction.h
+ /opt/ros/kinetic/include/moveit_msgs/MoveGroupActionFeedback.h
+ /opt/ros/kinetic/include/moveit_msgs/MoveGroupActionGoal.h
+ /opt/ros/kinetic/include/moveit_msgs/MoveGroupActionResult.h
+ /opt/ros/kinetic/include/moveit_msgs/MoveGroupFeedback.h
+ /opt/ros/kinetic/include/moveit_msgs/MoveGroupGoal.h
+ /opt/ros/kinetic/include/moveit_msgs/MoveGroupResult.h
  /opt/ros/kinetic/include/moveit_msgs/MoveItErrorCodes.h
  /opt/ros/kinetic/include/moveit_msgs/ObjectColor.h
  /opt/ros/kinetic/include/moveit_msgs/OrientationConstraint.h
  /opt/ros/kinetic/include/moveit_msgs/PlaceLocation.h
  /opt/ros/kinetic/include/moveit_msgs/PlannerInterfaceDescription.h
+ /opt/ros/kinetic/include/moveit_msgs/PlanningOptions.h
  /opt/ros/kinetic/include/moveit_msgs/PlanningScene.h
  /opt/ros/kinetic/include/moveit_msgs/PlanningSceneComponents.h
  /opt/ros/kinetic/include/moveit_msgs/PlanningSceneWorld.h

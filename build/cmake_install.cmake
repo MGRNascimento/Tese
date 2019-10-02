@@ -68,38 +68,47 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/miguel/catkin_ws/install/setup.bash")
+   "/home/miguel/catkin_ws/install/setup.bash;/home/miguel/catkin_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/miguel/catkin_ws/install" TYPE FILE FILES "/home/miguel/catkin_ws/build/catkin_generated/installspace/setup.bash")
+file(INSTALL DESTINATION "/home/miguel/catkin_ws/install" TYPE FILE FILES
+    "/home/miguel/catkin_ws/build/catkin_generated/installspace/setup.bash"
+    "/home/miguel/catkin_ws/build/catkin_generated/installspace/local_setup.bash"
+    )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/miguel/catkin_ws/install/setup.sh")
+   "/home/miguel/catkin_ws/install/setup.sh;/home/miguel/catkin_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/miguel/catkin_ws/install" TYPE FILE FILES "/home/miguel/catkin_ws/build/catkin_generated/installspace/setup.sh")
+file(INSTALL DESTINATION "/home/miguel/catkin_ws/install" TYPE FILE FILES
+    "/home/miguel/catkin_ws/build/catkin_generated/installspace/setup.sh"
+    "/home/miguel/catkin_ws/build/catkin_generated/installspace/local_setup.sh"
+    )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/miguel/catkin_ws/install/setup.zsh")
+   "/home/miguel/catkin_ws/install/setup.zsh;/home/miguel/catkin_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/miguel/catkin_ws/install" TYPE FILE FILES "/home/miguel/catkin_ws/build/catkin_generated/installspace/setup.zsh")
+file(INSTALL DESTINATION "/home/miguel/catkin_ws/install" TYPE FILE FILES
+    "/home/miguel/catkin_ws/build/catkin_generated/installspace/setup.zsh"
+    "/home/miguel/catkin_ws/build/catkin_generated/installspace/local_setup.zsh"
+    )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -147,7 +156,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/miguel/catkin_ws/build/gazebo_ros_pkgs/gazebo_ros/cmake_install.cmake")
   include("/home/miguel/catkin_ws/build/kinova-ros/kinova_driver/cmake_install.cmake")
   include("/home/miguel/catkin_ws/build/kinova-ros/kinova_demo/cmake_install.cmake")
-  include("/home/miguel/catkin_ws/build/cluster_segmentation/cmake_install.cmake")
   include("/home/miguel/catkin_ws/build/rail_segmentation/cmake_install.cmake")
   include("/home/miguel/catkin_ws/build/baxter_simulator/baxter_sim_controllers/cmake_install.cmake")
   include("/home/miguel/catkin_ws/build/gazebo_ros_pkgs/gazebo_plugins/cmake_install.cmake")
@@ -169,6 +177,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/miguel/catkin_ws/build/vision_visp/visp_tracker/cmake_install.cmake")
   include("/home/miguel/catkin_ws/build/vision_visp/visp_auto_tracker/cmake_install.cmake")
   include("/home/miguel/catkin_ws/build/kinova-ros/kinova_moveit/kinova_arm_moveit_demo/cmake_install.cmake")
+  include("/home/miguel/catkin_ws/build/cluster_segmentation/cmake_install.cmake")
   include("/home/miguel/catkin_ws/build/baxter_examples/cmake_install.cmake")
   include("/home/miguel/catkin_ws/build/kinova-ros/kinova_description/cmake_install.cmake")
   include("/home/miguel/catkin_ws/build/kinova-ros/kinova_moveit/robot_configs/j2n6s300_moveit_config/cmake_install.cmake")

@@ -8,6 +8,29 @@ kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/src/m
  /home/miguel/catkin_ws/src/kinova-ros/kinova_driver/include/kinova/KinovaTypes.h
  /home/miguel/catkin_ws/src/kinova-ros/kinova_driver/include/kinova_driver/kinova_ros_types.h
  /home/miguel/catkin_ws/src/kinova-ros/kinova_moveit/kinova_arm_moveit_demo/src/motion_plan.cpp
+ /opt/ros/kinetic/include/actionlib/action_definition.h
+ /opt/ros/kinetic/include/actionlib/client/action_client.h
+ /opt/ros/kinetic/include/actionlib/client/client_goal_handle_imp.h
+ /opt/ros/kinetic/include/actionlib/client/client_helpers.h
+ /opt/ros/kinetic/include/actionlib/client/comm_state.h
+ /opt/ros/kinetic/include/actionlib/client/comm_state_machine_imp.h
+ /opt/ros/kinetic/include/actionlib/client/connection_monitor.h
+ /opt/ros/kinetic/include/actionlib/client/goal_manager_imp.h
+ /opt/ros/kinetic/include/actionlib/client/simple_action_client.h
+ /opt/ros/kinetic/include/actionlib/client/simple_client_goal_state.h
+ /opt/ros/kinetic/include/actionlib/client/simple_goal_state.h
+ /opt/ros/kinetic/include/actionlib/client/terminal_state.h
+ /opt/ros/kinetic/include/actionlib/decl.h
+ /opt/ros/kinetic/include/actionlib/destruction_guard.h
+ /opt/ros/kinetic/include/actionlib/enclosure_deleter.h
+ /opt/ros/kinetic/include/actionlib/goal_id_generator.h
+ /opt/ros/kinetic/include/actionlib/managed_list.h
+ /opt/ros/kinetic/include/actionlib_msgs/GoalID.h
+ /opt/ros/kinetic/include/actionlib_msgs/GoalStatus.h
+ /opt/ros/kinetic/include/actionlib_msgs/GoalStatusArray.h
+ /opt/ros/kinetic/include/boost_161_condition_variable.h
+ /opt/ros/kinetic/include/boost_161_pthread_condition_variable.h
+ /opt/ros/kinetic/include/boost_161_pthread_condition_variable_fwd.h
  /opt/ros/kinetic/include/eigen_stl_containers/eigen_stl_containers.h
  /opt/ros/kinetic/include/eigen_stl_containers/eigen_stl_map_container.h
  /opt/ros/kinetic/include/eigen_stl_containers/eigen_stl_vector_container.h
@@ -58,11 +81,19 @@ kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/src/m
  /opt/ros/kinetic/include/moveit_msgs/LinkPadding.h
  /opt/ros/kinetic/include/moveit_msgs/LinkScale.h
  /opt/ros/kinetic/include/moveit_msgs/MotionPlanRequest.h
+ /opt/ros/kinetic/include/moveit_msgs/MoveGroupAction.h
+ /opt/ros/kinetic/include/moveit_msgs/MoveGroupActionFeedback.h
+ /opt/ros/kinetic/include/moveit_msgs/MoveGroupActionGoal.h
+ /opt/ros/kinetic/include/moveit_msgs/MoveGroupActionResult.h
+ /opt/ros/kinetic/include/moveit_msgs/MoveGroupFeedback.h
+ /opt/ros/kinetic/include/moveit_msgs/MoveGroupGoal.h
+ /opt/ros/kinetic/include/moveit_msgs/MoveGroupResult.h
  /opt/ros/kinetic/include/moveit_msgs/MoveItErrorCodes.h
  /opt/ros/kinetic/include/moveit_msgs/ObjectColor.h
  /opt/ros/kinetic/include/moveit_msgs/OrientationConstraint.h
  /opt/ros/kinetic/include/moveit_msgs/PlaceLocation.h
  /opt/ros/kinetic/include/moveit_msgs/PlannerInterfaceDescription.h
+ /opt/ros/kinetic/include/moveit_msgs/PlanningOptions.h
  /opt/ros/kinetic/include/moveit_msgs/PlanningScene.h
  /opt/ros/kinetic/include/moveit_msgs/PlanningSceneWorld.h
  /opt/ros/kinetic/include/moveit_msgs/PositionConstraint.h
@@ -79,6 +110,8 @@ kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/motion_plan.dir/src/m
  /opt/ros/kinetic/include/ros/advertise_service_options.h
  /opt/ros/kinetic/include/ros/assert.h
  /opt/ros/kinetic/include/ros/builtin_message_traits.h
+ /opt/ros/kinetic/include/ros/callback_queue.h
+ /opt/ros/kinetic/include/ros/callback_queue_interface.h
  /opt/ros/kinetic/include/ros/common.h
  /opt/ros/kinetic/include/ros/console.h
  /opt/ros/kinetic/include/ros/console_backend.h
