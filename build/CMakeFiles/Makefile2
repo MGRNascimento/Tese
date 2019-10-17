@@ -21305,7 +21305,7 @@ cluster_segmentation/CMakeFiles/obj_recognition_gencpp.dir/all: cluster_segmenta
 
 # Build rule for subdir invocation for target.
 cluster_segmentation/CMakeFiles/obj_recognition_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_gencpp.dir/rule
@@ -21425,10 +21425,15 @@ cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/all: kinov
 cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/all: kinova-ros/kinova_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/all: kinova-ros/kinova_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_eus.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/all: baxter_interface/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/all: baxter_interface/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/all: baxter_interface/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
@@ -21524,7 +21529,7 @@ all: cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/all
 
 # Build rule for subdir invocation for target.
 cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_cloud_transformer.dir/rule
@@ -21556,7 +21561,7 @@ cluster_segmentation/CMakeFiles/obj_recognition_geneus.dir/all: cluster_segmenta
 
 # Build rule for subdir invocation for target.
 cluster_segmentation/CMakeFiles/obj_recognition_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_geneus.dir/rule
@@ -21612,10 +21617,15 @@ cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/all: kinova-ros/kin
 cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/all: kinova-ros/kinova_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/all: kinova-ros/kinova_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_eus.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/all: baxter_interface/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/all: baxter_interface/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/all: baxter_interface/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
@@ -21711,7 +21721,7 @@ all: cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/all
 
 # Build rule for subdir invocation for target.
 cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 19
 	$(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/rule
@@ -21737,6 +21747,7 @@ clean: cluster_segmentation/CMakeFiles/obj_recognition_ImageRef.dir/clean
 # All Build rule for target.
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_eus.dir/all: baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_eus.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_eus.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_eus.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_eus.dir/all: cluster_segmentation/CMakeFiles/_obj_recognition_generate_messages_check_deps_GetNormals.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_eus.dir/all: cluster_segmentation/CMakeFiles/_obj_recognition_generate_messages_check_deps_DetectedObjectsArray.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_eus.dir/all: cluster_segmentation/CMakeFiles/_obj_recognition_generate_messages_check_deps_DetectedObject.dir/all
@@ -21748,7 +21759,7 @@ cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_eus.dir/all: c
 
 # Build rule for subdir invocation for target.
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_eus.dir/rule
@@ -21773,6 +21784,7 @@ clean: cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_eus.dir
 
 # All Build rule for target.
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/all: baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/all: cluster_segmentation/CMakeFiles/_obj_recognition_generate_messages_check_deps_GetNormals.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/all: cluster_segmentation/CMakeFiles/_obj_recognition_generate_messages_check_deps_DetectedObjectsArray.dir/all
@@ -21785,7 +21797,7 @@ cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/all: 
 
 # Build rule for subdir invocation for target.
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_lisp.dir/rule
@@ -21841,10 +21853,15 @@ cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/all: kinova-ros/ki
 cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/all: kinova-ros/kinova_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/all: kinova-ros/kinova_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_eus.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/all: baxter_interface/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/all: baxter_interface/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/all: baxter_interface/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
@@ -21940,7 +21957,7 @@ all: cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/all
 
 # Build rule for subdir invocation for target.
 cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/rule
@@ -21965,6 +21982,7 @@ clean: cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/clean
 
 # All Build rule for target.
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_cpp.dir/all: baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_cpp.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_cpp.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_cpp.dir/all: cluster_segmentation/CMakeFiles/_obj_recognition_generate_messages_check_deps_GetNormals.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_cpp.dir/all: cluster_segmentation/CMakeFiles/_obj_recognition_generate_messages_check_deps_DetectedObjectsArray.dir/all
@@ -21977,7 +21995,7 @@ cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_cpp.dir/all: c
 
 # Build rule for subdir invocation for target.
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_cpp.dir/rule
@@ -22041,7 +22059,7 @@ cluster_segmentation/CMakeFiles/obj_recognition_genpy.dir/all: cluster_segmentat
 
 # Build rule for subdir invocation for target.
 cluster_segmentation/CMakeFiles/obj_recognition_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_genpy.dir/rule
@@ -22073,7 +22091,7 @@ cluster_segmentation/CMakeFiles/obj_recognition_gennodejs.dir/all: cluster_segme
 
 # Build rule for subdir invocation for target.
 cluster_segmentation/CMakeFiles/obj_recognition_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_gennodejs.dir/rule
@@ -22137,7 +22155,7 @@ cluster_segmentation/CMakeFiles/obj_recognition_genlisp.dir/all: cluster_segment
 
 # Build rule for subdir invocation for target.
 cluster_segmentation/CMakeFiles/obj_recognition_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_genlisp.dir/rule
@@ -22162,6 +22180,7 @@ clean: cluster_segmentation/CMakeFiles/obj_recognition_genlisp.dir/clean
 
 # All Build rule for target.
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_nodejs.dir/all: baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_nodejs.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_nodejs.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_nodejs.dir/all: cluster_segmentation/CMakeFiles/_obj_recognition_generate_messages_check_deps_GetNormals.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_nodejs.dir/all: cluster_segmentation/CMakeFiles/_obj_recognition_generate_messages_check_deps_DetectedObjectsArray.dir/all
@@ -22174,7 +22193,7 @@ cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_nodejs.dir/rule
@@ -22200,6 +22219,7 @@ clean: cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_nodejs.
 # All Build rule for target.
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_py.dir/all: baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_py.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_py.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_py.dir/all: cluster_segmentation/CMakeFiles/_obj_recognition_generate_messages_check_deps_GetNormals.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_py.dir/all: cluster_segmentation/CMakeFiles/_obj_recognition_generate_messages_check_deps_DetectedObjectsArray.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_py.dir/all: cluster_segmentation/CMakeFiles/_obj_recognition_generate_messages_check_deps_DetectedObject.dir/all
@@ -22211,7 +22231,7 @@ cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_py.dir/all: cl
 
 # Build rule for subdir invocation for target.
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_generate_messages_py.dir/rule
@@ -22289,7 +22309,7 @@ all: cluster_segmentation/CMakeFiles/obj_recognition_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_generate_messages.dir/rule
@@ -22345,10 +22365,15 @@ cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/all: kinov
 cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/all: kinova-ros/kinova_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/all: kinova-ros/kinova_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_eus.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/all: baxter_interface/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/all: baxter_interface/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/all: baxter_interface/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
@@ -22444,7 +22469,7 @@ all: cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/all
 
 # Build rule for subdir invocation for target.
 cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_feature_extractor.dir/rule
@@ -22500,10 +22525,15 @@ cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/all: kinova-ros/kin
 cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/all: kinova-ros/kinova_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/all: kinova-ros/kinova_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_eus.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/all: baxter_interface/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/all: baxter_interface/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/all: baxter_interface/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
@@ -22599,7 +22629,7 @@ all: cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/all
 
 # Build rule for subdir invocation for target.
 cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_ImageCur.dir/rule
@@ -22655,10 +22685,15 @@ cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/all: kinova-ros
 cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/all: kinova-ros/kinova_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/all: kinova-ros/kinova_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_eus.dir/all
+cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/all: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/all: baxter_interface/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/all: baxter_interface/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/all: baxter_interface/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
@@ -22754,7 +22789,7 @@ all: cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/all
 
 # Build rule for subdir invocation for target.
 cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miguel/catkin_ws/build/CMakeFiles 0
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_segmentation.dir/rule

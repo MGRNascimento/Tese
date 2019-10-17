@@ -40,7 +40,7 @@
 
   <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-	args="-param robot_description -urdf -x 0 -y 0 -z 0 -Y 0 -model baxter
+	args="-param robot_description -urdf -x 0 -y 1 -z 0.93 -Y 0 -model baxter
 	      -J baxter::right_s0 -0.272659
 	      -J baxter::right_s1 1.04701
 	      -J baxter::right_e0 -0.00123203
@@ -54,9 +54,20 @@
 	      -J baxter::left_e1 0.491094
 	      -J baxter::left_w0 -0.178079
 	      -J baxter::left_w1 -0.0610333
-	      -J baxter::left_w2 -0.0124707" />
+	      -J baxter::left_w2 0.5" />
 
   <!-- ros_control baxter launch file -->
+  <!-- Set the kinematic tips for the left_arm and right_arm move_groups -->
+  <arg name="left_tip_name" default="left_gripper"/>
+  <arg name="right_tip_name" default="right_gripper"/>
+  <include file="$(find baxter_moveit_config)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="false"/>
+    <arg name="left_electric_gripper" value="$(arg left_electric_gripper)"/>
+    <arg name="right_electric_gripper" value="$(arg right_electric_gripper)"/>
+    <arg name="left_tip_name" value="$(arg left_tip_name)"/>
+    <arg name="right_tip_name" value="$(arg right_tip_name)"/>
+  </include>
+
   <include file="$(find baxter_sim_hardware)/launch/baxter_sdk_control.launch">
       <arg name="right_electric_gripper" value="$(arg right_electric_gripper)"/>
       <arg name="left_electric_gripper" value="$(arg left_electric_gripper)"/>

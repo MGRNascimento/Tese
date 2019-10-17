@@ -21,6 +21,7 @@ find_package(catkin REQUIRED COMPONENTS
 	visp_bridge
 	cv_bridge
 	VISP REQUIRED
+	baxter_core_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -59,6 +60,7 @@ catkin_python_setup()
 ## Generate messages in the 'msg' folder
  add_message_files(
   FILES
+  ##JointCommand.msg
    DetectedObjectsArray.msg
 	 DetectedObject.msg
 	 SegmentedClustersArray.msg
@@ -83,6 +85,7 @@ catkin_python_setup()
 ## Generate added messages and services with any dependencies listed here
  generate_messages(
    DEPENDENCIES
+   baxter_core_msgs
    std_msgs
 	 sensor_msgs
  )
@@ -124,6 +127,7 @@ catkin_package(
 CATKIN_DEPENDS message_runtime
 	moveit_core
 	moveit_ros_planning_interface
+	baxter_core_msgs
 )
 
 ###########
@@ -167,7 +171,7 @@ add_executable(${PROJECT_NAME}_feature_extractor src/feature_extractor.cpp)
 ## same as for the library above
 add_dependencies(${PROJECT_NAME}_ImageRef ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_gencfg)
 add_dependencies(${PROJECT_NAME}_ImageCur ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_gencfg)
-add_dependencies(${PROJECT_NAME}_SIFTmatch ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_gencfg)
+add_dependencies(${PROJECT_NAME}_SIFTmatch ${catkin_EXPORTED_TARGETS} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${PROJECT_NAME}_gencfg)
 add_dependencies(${PROJECT_NAME}_cloud_transformer ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_gencfg)
 add_dependencies(${PROJECT_NAME}_segmentation ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_gencfg)
 add_dependencies(${PROJECT_NAME}_feature_extractor ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_gencfg)

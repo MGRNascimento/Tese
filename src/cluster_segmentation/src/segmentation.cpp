@@ -1,13 +1,3 @@
-/*
-
-ROS node for point cloud cluster based segmentaion of cluttered objects on table
-
-Author: Sean Cassero
-7/15/15
-
-*/
-
-
 #include <ros/ros.h>
 #include <visualization_msgs/Marker.h>
 #include <visualization_msgs/MarkerArray.h>

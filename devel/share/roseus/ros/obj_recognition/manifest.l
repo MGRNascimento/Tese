@@ -7,6 +7,7 @@
 ;;
 (ros::load-ros-package "actionlib")
 (ros::load-ros-package "actionlib_msgs")
+(ros::load-ros-package "baxter_core_msgs")
 (ros::load-ros-package "bond")
 (ros::load-ros-package "control_msgs")
 (ros::load-ros-package "control_toolbox")

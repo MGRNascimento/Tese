@@ -11,6 +11,8 @@
     (:file "_package_DetectedObject" :depends-on ("_package"))
     (:file "DetectedObjectsArray" :depends-on ("_package_DetectedObjectsArray"))
     (:file "_package_DetectedObjectsArray" :depends-on ("_package"))
+    (:file "JointCommand" :depends-on ("_package_JointCommand"))
+    (:file "_package_JointCommand" :depends-on ("_package"))
     (:file "SegmentedClustersArray" :depends-on ("_package_SegmentedClustersArray"))
     (:file "_package_SegmentedClustersArray" :depends-on ("_package"))
   ))

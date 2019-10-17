@@ -162,7 +162,7 @@ foreach(t ${obj_recognition_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "message_runtime;moveit_core;moveit_ros_planning_interface")
+set(depends "message_runtime;moveit_core;moveit_ros_planning_interface;baxter_core_msgs")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

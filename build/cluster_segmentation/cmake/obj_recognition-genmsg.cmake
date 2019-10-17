@@ -2,7 +2,7 @@
 
 message(STATUS "obj_recognition: 3 messages, 1 services")
 
-set(MSG_I_FLAGS "-Iobj_recognition:/home/miguel/catkin_ws/src/cluster_segmentation/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Iobj_recognition:/home/miguel/catkin_ws/src/cluster_segmentation/msg;-Ibaxter_core_msgs:/home/miguel/catkin_ws/src/baxter_common/baxter_core_msgs/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -335,6 +335,9 @@ if(gencpp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ob
     DESTINATION ${gencpp_INSTALL_DIR}
   )
 endif()
+if(TARGET baxter_core_msgs_generate_messages_cpp)
+  add_dependencies(obj_recognition_generate_messages_cpp baxter_core_msgs_generate_messages_cpp)
+endif()
 if(TARGET std_msgs_generate_messages_cpp)
   add_dependencies(obj_recognition_generate_messages_cpp std_msgs_generate_messages_cpp)
 endif()
@@ -348,6 +351,9 @@ if(geneus_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ob
     DIRECTORY ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/obj_recognition
     DESTINATION ${geneus_INSTALL_DIR}
   )
+endif()
+if(TARGET baxter_core_msgs_generate_messages_eus)
+  add_dependencies(obj_recognition_generate_messages_eus baxter_core_msgs_generate_messages_eus)
 endif()
 if(TARGET std_msgs_generate_messages_eus)
   add_dependencies(obj_recognition_generate_messages_eus std_msgs_generate_messages_eus)
@@ -363,6 +369,9 @@ if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/
     DESTINATION ${genlisp_INSTALL_DIR}
   )
 endif()
+if(TARGET baxter_core_msgs_generate_messages_lisp)
+  add_dependencies(obj_recognition_generate_messages_lisp baxter_core_msgs_generate_messages_lisp)
+endif()
 if(TARGET std_msgs_generate_messages_lisp)
   add_dependencies(obj_recognition_generate_messages_lisp std_msgs_generate_messages_lisp)
 endif()
@@ -376,6 +385,9 @@ if(gennodejs_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_D
     DIRECTORY ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/obj_recognition
     DESTINATION ${gennodejs_INSTALL_DIR}
   )
+endif()
+if(TARGET baxter_core_msgs_generate_messages_nodejs)
+  add_dependencies(obj_recognition_generate_messages_nodejs baxter_core_msgs_generate_messages_nodejs)
 endif()
 if(TARGET std_msgs_generate_messages_nodejs)
   add_dependencies(obj_recognition_generate_messages_nodejs std_msgs_generate_messages_nodejs)
@@ -401,6 +413,9 @@ if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/obj_
     FILES_MATCHING
     REGEX "${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/obj_recognition/.+/__init__.pyc?$"
   )
+endif()
+if(TARGET baxter_core_msgs_generate_messages_py)
+  add_dependencies(obj_recognition_generate_messages_py baxter_core_msgs_generate_messages_py)
 endif()
 if(TARGET std_msgs_generate_messages_py)
   add_dependencies(obj_recognition_generate_messages_py std_msgs_generate_messages_py)
