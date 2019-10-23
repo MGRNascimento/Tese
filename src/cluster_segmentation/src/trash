@@ -1,0 +1,48 @@
+/*geometry_msgs::PoseStamped velTransformation;
+    geometry_msgs::PoseStamped transformed;
+
+    double cy = cos(v[5] * 0.5);
+    double sy = sin(v[5] * 0.5);
+    double cp = cos(v[4] * 0.5);
+    double sp = sin(v[4] * 0.5);
+    double cr = cos(v[3] * 0.5);
+    double sr = sin(v[3] * 0.5);
+
+    velTransformation.header.stamp=ros::Time(0);
+    velTransformation.header.frame_id="left_hand_camera_axis";
+
+    geometry_msgs::Point point;
+    point.x=v[0];
+    point.y=v[1];
+    point.z=v[2];
+
+    velTransformation.pose.position=point;
+    velTransformation.pose.orientation.x= cy * cp * sr - sy * sp * cr;
+    velTransformation.pose.orientation.y= sy * cp * sr + cy * sp * cr;
+    velTransformation.pose.orientation.z=  sy * cp * cr - cy * sp * sr;
+    velTransformation.pose.orientation.w= cy * cp * cr + sy * sp * sr;
+
+    listener.transformPose("base",velTransformation,transformed);
+
+    //Eigen::Vector3d reference_point_position(t.getOrigin().x(), t.getOrigin().y(), t.getOrigin().z());
+
+    /*vel[0]=transformed.pose.position.x;
+    vel[1]=transformed.pose.position.y;
+    vel[2]=transformed.pose.position.z;
+    
+    // roll (x-axis rotation)
+    double sinr_cosp = +2.0 * (transformed.pose.orientation.w * transformed.pose.orientation.x + transformed.pose.orientation.y * transformed.pose.orientation.z);
+    double cosr_cosp = +1.0 - 2.0 * (transformed.pose.orientation.x * transformed.pose.orientation.x + transformed.pose.orientation.y * transformed.pose.orientation.y);
+    vel[3]= atan2(sinr_cosp, cosr_cosp);
+
+    // pitch (y-axis rotation)
+    double sinp = +2.0 * (transformed.pose.orientation.w * transformed.pose.orientation.y - transformed.pose.orientation.z * transformed.pose.orientation.x);
+    if (fabs(sinp) >= 1)
+        vel[4] = copysign(M_PI / 2, sinp); // use 90 degrees if out of range
+    else
+        vel[4] = asin(sinp);
+
+    // yaw (z-axis rotation)
+    double siny_cosp = +2.0 * (transformed.pose.orientation.w * transformed.pose.orientation.z + transformed.pose.orientation.x * transformed.pose.orientation.y);
+    double cosy_cosp = +1.0 - 2.0 * (transformed.pose.orientation.y * transformed.pose.orientation.y + transformed.pose.orientation.z * transformed.pose.orientation.z);  
+    vel[5] = atan2(siny_cosp, cosy_cosp);*/

@@ -31,7 +31,9 @@ void ImageRef::rePublish (const sensor_msgs::Image& src){
 
     m_pub.publish(src);
     m_sub.shutdown();
-     printf("Sent reference image (%d, %d)\n",src.height, src.width);
+    printf("Sent reference image (%d, %d) %s\n",src.height, src.width, src.header.frame_id);
+    ros::Duration(0.5).sleep();
+
     ros::shutdown();
     
     return;

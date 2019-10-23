@@ -1397,6 +1397,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "kinova-ros/kinova_moveit/kinova_arm_moveit_demo/CMakeFiles/work_scene.dir/DependInfo.cmake"
   "cluster_segmentation/CMakeFiles/roslint_obj_recognition.dir/DependInfo.cmake"
   "cluster_segmentation/CMakeFiles/roslint.dir/DependInfo.cmake"
+  "cluster_segmentation/CMakeFiles/obj_recognition_cameraTransform.dir/DependInfo.cmake"
   "cluster_segmentation/CMakeFiles/obj_recognition_gencpp.dir/DependInfo.cmake"
   "cluster_segmentation/CMakeFiles/_obj_recognition_generate_messages_check_deps_GetNormals.dir/DependInfo.cmake"
   "cluster_segmentation/CMakeFiles/_obj_recognition_generate_messages_check_deps_DetectedObjectsArray.dir/DependInfo.cmake"

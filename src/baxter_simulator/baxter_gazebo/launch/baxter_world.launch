@@ -54,7 +54,10 @@
 	      -J baxter::left_e1 0.491094
 	      -J baxter::left_w0 -0.178079
 	      -J baxter::left_w1 -0.0610333
-	      -J baxter::left_w2 0.5" />
+	      -J baxter::left_w2 0" />
+
+  <!--node pkg="obj_recognition" type="obj_recognition_cameraTransform"
+          name="cameraTransform" /-->
 
   <!-- ros_control baxter launch file -->
   <!-- Set the kinematic tips for the left_arm and right_arm move_groups -->

@@ -289,30 +289,30 @@
       <wall_time>1499228121 683701000</wall_time>
       <iterations>62773</iterations>
       <model name='beer'>
-        <pose frame=''>0.800901 1.3834 0.77499 1e-06 -2.7e-05 -0.001895</pose>
+        <pose frame=''>0.900901 1.3834 0.77499 1e-06 -2.7e-05 -0.001895</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>0.800901 1.3834 0.88999 1e-06 -2.7e-05 -0.001895</pose>
+          <pose frame=''>0.900901 1.3834 0.88999 1e-06 -2.7e-05 -0.001895</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 -1e-06 0 0</acceleration>
           <wrench>0 0 -3.822 0 -0 0</wrench>
         </link>
       </model>
       <model name='bowl'>
-        <pose frame=''>0.800901  0.728087 0.79251 -8.4e-05 5.4e-05 -0.00016</pose>
+        <pose frame=''>0.900901  0.728087 0.79251 -8.4e-05 5.4e-05 -0.00016</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>0.800901  0.728087 0.79251 -8.4e-05 5.4e-05 -0.00016</pose>
+          <pose frame=''>0.900901  0.728087 0.79251 -8.4e-05 5.4e-05 -0.00016</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -0.98 0 -0 0</wrench>
         </link>
       </model>
       <model name='cafe_table'>
-        <pose frame=''>1 1 0 0 -0 1.57079632679</pose>
+        <pose frame=''>1.1 1 0 0 -0 1.57079632679</pose>
         <scale>2 1 1</scale>
         <link name='link'>
-          <pose frame=''>1 1 0 0 -0 1.57079632679</pose>
+          <pose frame=''>1.1 1 0 0 -0 1.57079632679</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -329,10 +329,10 @@
         </link>
       </model>
       <model name='hammer'>
-        <pose frame=''>0.800901 1 0.833935 0 -0 1.57079632679 </pose>
+        <pose frame=''>0.900901 1 0.833935 0 -0 1.57079632679 </pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>0.800901 1 0.833935 0 -0 1.57079632679 </pose>
+          <pose frame=''>0.900901 1 0.833935 0 -0 1.57079632679 </pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>

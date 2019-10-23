@@ -928,6 +928,7 @@
 /home/miguel/catkin_ws/build/cluster_segmentation/CMakeFiles/install/local.dir
 /home/miguel/catkin_ws/build/cluster_segmentation/CMakeFiles/roslint_obj_recognition.dir
 /home/miguel/catkin_ws/build/cluster_segmentation/CMakeFiles/roslint.dir
+/home/miguel/catkin_ws/build/cluster_segmentation/CMakeFiles/obj_recognition_cameraTransform.dir
 /home/miguel/catkin_ws/build/cluster_segmentation/CMakeFiles/install/strip.dir
 /home/miguel/catkin_ws/build/cluster_segmentation/CMakeFiles/obj_recognition_gencpp.dir
 /home/miguel/catkin_ws/build/cluster_segmentation/CMakeFiles/_obj_recognition_generate_messages_check_deps_GetNormals.dir

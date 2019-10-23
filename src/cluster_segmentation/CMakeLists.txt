@@ -160,6 +160,7 @@ add_executable(${PROJECT_NAME}_SIFTmatch src/SIFTmatch.cpp)
 add_executable(${PROJECT_NAME}_cloud_transformer src/cloud_transformer.cpp)
 add_executable(${PROJECT_NAME}_segmentation src/segmentation.cpp)
 add_executable(${PROJECT_NAME}_feature_extractor src/feature_extractor.cpp)
+add_executable(${PROJECT_NAME}_cameraTransform src/cameraTransform.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -175,6 +176,7 @@ add_dependencies(${PROJECT_NAME}_SIFTmatch ${catkin_EXPORTED_TARGETS} ${${PROJEC
 add_dependencies(${PROJECT_NAME}_cloud_transformer ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_gencfg)
 add_dependencies(${PROJECT_NAME}_segmentation ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_gencfg)
 add_dependencies(${PROJECT_NAME}_feature_extractor ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_gencfg)
+add_dependencies(${PROJECT_NAME}_cameraTransform ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_gencfg)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(${PROJECT_NAME}_cloud_transformer
@@ -186,6 +188,8 @@ target_link_libraries(${PROJECT_NAME}_ImageCur ${catkin_LIBRARIES})
 target_link_libraries(${PROJECT_NAME}_segmentation ${catkin_LIBRARIES})
 target_link_libraries(${PROJECT_NAME}_SIFTmatch ${catkin_LIBRARIES})
 target_link_libraries(${PROJECT_NAME}_feature_extractor ${catkin_LIBRARIES})
+target_link_libraries(${PROJECT_NAME}_cameraTransform ${catkin_LIBRARIES})
+#############
 #############
 ## Install ##
 #############

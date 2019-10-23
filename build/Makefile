@@ -6913,6 +6913,19 @@ roslint/fast:
 .PHONY : roslint/fast
 
 #=============================================================================
+# Target rules for targets named obj_recognition_cameraTransform
+
+# Build rule for target.
+obj_recognition_cameraTransform: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 obj_recognition_cameraTransform
+.PHONY : obj_recognition_cameraTransform
+
+# fast build rule for target.
+obj_recognition_cameraTransform/fast:
+	$(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_cameraTransform.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_cameraTransform.dir/build
+.PHONY : obj_recognition_cameraTransform/fast
+
+#=============================================================================
 # Target rules for targets named obj_recognition_gencpp
 
 # Build rule for target.
@@ -7756,6 +7769,7 @@ help:
 	@echo "... work_scene"
 	@echo "... roslint_obj_recognition"
 	@echo "... roslint"
+	@echo "... obj_recognition_cameraTransform"
 	@echo "... obj_recognition_gencpp"
 	@echo "... _obj_recognition_generate_messages_check_deps_GetNormals"
 	@echo "... _obj_recognition_generate_messages_check_deps_DetectedObjectsArray"

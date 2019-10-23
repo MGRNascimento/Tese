@@ -196,6 +196,21 @@ roslint/fast:
 .PHONY : roslint/fast
 
 # Convenience name for target.
+cluster_segmentation/CMakeFiles/obj_recognition_cameraTransform.dir/rule:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_cameraTransform.dir/rule
+.PHONY : cluster_segmentation/CMakeFiles/obj_recognition_cameraTransform.dir/rule
+
+# Convenience name for target.
+obj_recognition_cameraTransform: cluster_segmentation/CMakeFiles/obj_recognition_cameraTransform.dir/rule
+
+.PHONY : obj_recognition_cameraTransform
+
+# fast build rule for target.
+obj_recognition_cameraTransform/fast:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_cameraTransform.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_cameraTransform.dir/build
+.PHONY : obj_recognition_cameraTransform/fast
+
+# Convenience name for target.
 cluster_segmentation/CMakeFiles/obj_recognition_gencpp.dir/rule:
 	cd /home/miguel/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cluster_segmentation/CMakeFiles/obj_recognition_gencpp.dir/rule
 .PHONY : cluster_segmentation/CMakeFiles/obj_recognition_gencpp.dir/rule
@@ -606,6 +621,33 @@ src/SIFTmatch.cpp.s:
 	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_SIFTmatch.dir/src/SIFTmatch.cpp.s
 .PHONY : src/SIFTmatch.cpp.s
 
+src/cameraTransform.o: src/cameraTransform.cpp.o
+
+.PHONY : src/cameraTransform.o
+
+# target to build an object file
+src/cameraTransform.cpp.o:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_cameraTransform.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_cameraTransform.dir/src/cameraTransform.cpp.o
+.PHONY : src/cameraTransform.cpp.o
+
+src/cameraTransform.i: src/cameraTransform.cpp.i
+
+.PHONY : src/cameraTransform.i
+
+# target to preprocess a source file
+src/cameraTransform.cpp.i:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_cameraTransform.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_cameraTransform.dir/src/cameraTransform.cpp.i
+.PHONY : src/cameraTransform.cpp.i
+
+src/cameraTransform.s: src/cameraTransform.cpp.s
+
+.PHONY : src/cameraTransform.s
+
+# target to generate assembly for a file
+src/cameraTransform.cpp.s:
+	cd /home/miguel/catkin_ws/build && $(MAKE) -f cluster_segmentation/CMakeFiles/obj_recognition_cameraTransform.dir/build.make cluster_segmentation/CMakeFiles/obj_recognition_cameraTransform.dir/src/cameraTransform.cpp.s
+.PHONY : src/cameraTransform.cpp.s
+
 src/cloud_transformer.o: src/cloud_transformer.cpp.o
 
 .PHONY : src/cloud_transformer.o
@@ -700,6 +742,7 @@ help:
 	@echo "... install/local"
 	@echo "... roslint_obj_recognition"
 	@echo "... roslint"
+	@echo "... obj_recognition_cameraTransform"
 	@echo "... install/strip"
 	@echo "... obj_recognition_gencpp"
 	@echo "... _obj_recognition_generate_messages_check_deps_GetNormals"
@@ -733,6 +776,9 @@ help:
 	@echo "... src/SIFTmatch.o"
 	@echo "... src/SIFTmatch.i"
 	@echo "... src/SIFTmatch.s"
+	@echo "... src/cameraTransform.o"
+	@echo "... src/cameraTransform.i"
+	@echo "... src/cameraTransform.s"
 	@echo "... src/cloud_transformer.o"
 	@echo "... src/cloud_transformer.i"
 	@echo "... src/cloud_transformer.s"
